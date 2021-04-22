@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="?libraryTopBarEditIcon" android:id="@id/action_edit_recent_books_button" android:title="편집" app:showAsAction="always" />
+    <item android:icon="?libraryTopBarOverflowIcon" android:id="@id/action_more_menu" android:title="더보기" app:showAsAction="always" />
+</menu>

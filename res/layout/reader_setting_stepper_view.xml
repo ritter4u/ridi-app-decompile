@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/stepper_minus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reader_typo_setting_btn_stepper_minus" android:contentDescription="@null" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/stepper_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reader_typo_setting_btn_stepper_plus" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+</merge>

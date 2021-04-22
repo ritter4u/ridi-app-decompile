@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d merkintää</item>
+        <item quantity="zero">Ei merkintöjä</item>
+        <item quantity="one">%d merkintä</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d riviä</item>
+        <item quantity="zero">%d riviä</item>
+        <item quantity="one">%d rivi</item>
+        <item quantity="two">%d riviä</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d sivua</item>
+        <item quantity="one">%d sivu</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d hakutulosta</item>
+        <item quantity="zero">Ei hakutuloksia</item>
+        <item quantity="one">%d hakutulos</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/dialog_series_payment_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="18.0dip" android:paddingEnd="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="?seriesPaymentBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/series_payment_dialog_width">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="?seriesPaymentTitleTextColor" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0dip" android:textColor="?seriesPaymentContentTextColor" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:lineSpacingExtra="3.0dip" />
+            <TextView android:textSize="15.0dip" android:textColor="?seriesPaymentRentTextColor" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <Spinner android:theme="@style/RidiTheme" android:id="@id/coupon_list" android:tag="binding_4" android:background="?seriesPaymentCouponSpinnerBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:tag="binding_5" android:background="?seriesPaymentCashInfoBackground" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0dip" android:textColor="?seriesPaymentContentTextColor" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="13.0dip" android:textColor="?seriesPaymentContentTextColor" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <FrameLayout android:id="@id/negative" android:background="?seriesPaymentBackground" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:foreground="?android:selectableItemBackground" android:layout_marginEnd="4.0dip" style="?android:borderlessButtonStyle">
+                    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="?seriesPaymentNegativeTextColor" android:layout_gravity="center" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/positive" android:tag="binding_9" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="36.0dip" android:foreground="?android:selectableItemBackground" style="?android:borderlessButtonStyle">
+                    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/close" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/series_payment_dialog_icon_close" android:scaleType="center" android:contentDescription="@null" />
+    </FrameLayout>
+</FrameLayout>

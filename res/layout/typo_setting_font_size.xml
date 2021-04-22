@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="51.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reader_typo_setting_icon_font_size" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="28.0dip">
+        <View android:background="@color/reader_settings_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/font_size_category" android:text="글자 크기" style="@style/RidiTypoSettingCategory" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/slategray_50" android:id="@id/font_size_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/font_size_category" />
+            <com.ridi.books.viewer.reader.view.ReaderSettingStepperView android:id="@id/font_size_stepper" style="@style/RidiReaderSettingStepper" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

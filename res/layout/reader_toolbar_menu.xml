@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/reader_toolbar_tts" android:visibility="gone" android:text="듣기" app:drawableTopCompat="?readerToolBarTTSIcon" style="@style/RidiReaderToolBarItem" />
+    <TextView android:id="@id/reader_toolbar_scroll_mode" android:visibility="gone" android:text="스크롤보기" app:drawableTopCompat="?readerToolBarScrollIcon" style="@style/RidiReaderToolBarItem" />
+    <TextView android:id="@id/reader_toolbar_toc" android:text="목차" app:drawableTopCompat="?readerToolBarTocIcon" style="@style/RidiReaderToolBarItem" />
+    <FrameLayout android:id="@id/reader_toolbar_comment" android:background="@null" android:visibility="gone" android:foreground="?android:actionBarItemBackground" style="@style/RidiReaderToolBarItemContainer">
+        <TextView android:layout_gravity="center" android:background="@null" android:layout_width="fill_parent" android:text="댓글" app:drawableTopCompat="?readerToolBarCommentIcon" style="@style/RidiReaderToolBarItem" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/comment_count_container" android:background="?readerBarBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginStart="14.0dip">
+            <TextView android:textSize="9.0dip" android:textStyle="bold" android:textColor="?readerToolBarCommentCountTextColor" android:id="@id/comment_count" android:background="?readerToolBarCommentCountBackground" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="7.0dip" android:paddingEnd="7.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:id="@id/reader_toolbar_reading_note" android:text="독서노트" app:drawableTopCompat="?readerToolBarReadingNoteIcon" style="@style/RidiReaderToolBarItem" />
+    <TextView android:id="@id/reader_toolbar_typo_settings" android:text="보기 설정" app:drawableTopCompat="?readerToolBarTypoSettingsIcon" style="@style/RidiReaderToolBarItem" />
+    <TextView android:id="@id/reader_toolbar_settings" android:text="뷰어 설정" app:drawableTopCompat="?readerToolBarReaderSettingsIcon" style="@style/RidiReaderToolBarItem" />
+</merge>

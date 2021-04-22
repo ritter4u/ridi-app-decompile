@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_library_downloaded_group_books_0" android:background="?themeBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/library_books" layout="@layout/library_books" />
+    <include android:layout_gravity="bottom" android:id="@id/recent_book_bar" android:layout_width="fill_parent" android:layout_height="@dimen/library_recent_book_bar_height" layout="@layout/recent_book_bar" />
+</FrameLayout>

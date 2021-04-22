@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pspdfkit.ui.toolbar.MainToolbar android:id="@id/pspdf__toolbar_main" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/pspdf__toolbar_elevation" app:contentInsetEnd="16.0dip" app:contentInsetRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

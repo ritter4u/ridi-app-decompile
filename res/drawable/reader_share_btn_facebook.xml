@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="2.0dip" android:color="@color/bluegray_50" />
+            <size android:height="48.0dip" android:width="48.0dip" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/reader_share_icon_facebook" android:left="12.0dip" android:top="12.0dip" android:right="12.0dip" android:bottom="12.0dip" />
+</layer-list>

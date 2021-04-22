@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.main.view.download.DownloadCountStatusView android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/download_count_status" android:background="@color/gray_90_95" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="13.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="다운로드 중" />
+        <com.ridi.books.viewer.common.view.SmallDotsProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/dodgerblue_50" android:id="@id/completed_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/dodgerblue_40_50" android:id="@id/all_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:id="@id/cancel_all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="전체 취소" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</com.ridi.books.viewer.main.view.download.DownloadCountStatusView>

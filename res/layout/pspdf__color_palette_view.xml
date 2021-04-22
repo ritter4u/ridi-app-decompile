@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:id="@id/pspdf__recently_used_palette_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/pspdf__color_picker_recently_used" />
+    <com.pspdfkit.framework.ui.inspector.ColorPaletteView android:id="@id/pspdf__recently_used_palette" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/pspdf__color_picker_default_color_palette" />
+    <com.pspdfkit.framework.ui.inspector.ColorPaletteView android:id="@id/pspdf__default_palette" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/pspdf__color_picker_color_variations" />
+    <com.pspdfkit.framework.ui.inspector.ColorPaletteView android:id="@id/pspdf__color_variations_palette" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

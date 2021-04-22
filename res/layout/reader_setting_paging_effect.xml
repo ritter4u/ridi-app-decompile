@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reader_setting_paging_effect_contents" android:background="@drawable/reader_setting_selectable_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/reader_settings_text" android:gravity="center_vertical" android:id="@id/paging_effect_dropdown_text" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="페이지 넘김 효과" android:layout_marginStart="16.0dip" />
+    <Spinner android:theme="@style/RidiTheme.White" android:id="@id/paging_effect_spinner" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dropdown" android:layout_marginStart="16.0dip" />
+</LinearLayout>

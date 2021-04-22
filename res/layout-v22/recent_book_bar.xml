@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.main.view.library.RecentBookBar android:background="?navigationBarBackground" android:layout_width="fill_parent" android:layout_height="@dimen/library_recent_book_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/RidiLibraryRecentBookBarBorder" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/recent_book_bar_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="20.0dip" android:paddingEnd="16.0dip">
+        <FrameLayout android:id="@id/cover_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="9.0dip">
+            <com.ridi.books.viewer.main.view.library.book.LibraryBookCoverView android:id="@id/recent_book_cover" android:layout_width="40.0dip" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center" android:id="@id/marked_as_invalidated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@drawable/main_library_icon_recent_book_marked_as_invalidated" android:contentDescription="@null" />
+        </FrameLayout>
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="?recentBookBarTextColor" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/recent_book_title_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="true" android:layout_weight="1.0" android:layout_marginStart="10.0dip" />
+        <FrameLayout android:id="@id/open_serial_home" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="?serialHomeLabelTextColor" android:layout_gravity="center" android:background="?serialHomeLabelBorder" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="작품 홈" android:paddingHorizontal="10.0dip" android:paddingVertical="7.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/open_recent_book_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+            <ImageView android:layout_gravity="center" android:background="?android:actionBarItemBackground" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?recentBookBarHistoryIcon" android:contentDescription="최근 읽은책 목록" />
+        </FrameLayout>
+    </LinearLayout>
+</com.ridi.books.viewer.main.view.library.RecentBookBar>

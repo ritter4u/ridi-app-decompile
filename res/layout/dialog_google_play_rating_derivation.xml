@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/RidiTheme.Dialog.Holo.Light" android:orientation="vertical" android:background="@drawable/btn_white_round_bg" android:paddingTop="24.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/google_play_rating_derivation_icon_close" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/google_play_rating_derivation_icon_notice" android:contentDescription="@null" />
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/bluegray_80" android:gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="잠깐,\n리디북스 앱에 만족하시나요?" />
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/primary_button" android:background="@color/dodgerblue_50" android:layout_width="248.0dip" android:layout_height="40.0dip" android:layout_marginTop="32.0dip" android:text="네! 만족합니다" />
+    <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/slategray_60" android:gravity="center" android:id="@id/secondary_button" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="아니요, 만족하지 않습니다" />
+</LinearLayout>

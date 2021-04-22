@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d anotace</item>
+        <item quantity="zero">Žádné anotace</item>
+        <item quantity="one">%d anotace</item>
+        <item quantity="few">%d anotace</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d čár</item>
+        <item quantity="one">%d čára</item>
+        <item quantity="few">%d čáry</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d stran</item>
+        <item quantity="one">%d strana</item>
+        <item quantity="few">%d strany</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d shod nalezeno</item>
+        <item quantity="zero">Žádné shody nebyly nalezeny</item>
+        <item quantity="one">%d shoda nalezena</item>
+        <item quantity="few">%d shody nalezeny</item>
+    </plurals>
+</resources>

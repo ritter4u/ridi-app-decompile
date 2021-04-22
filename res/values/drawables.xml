@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="app_lock_passcode_keypad_separator">@null</item>
+    <item type="drawable" name="main_setting_icon_filebrowse_cbz" />
+    <item type="drawable" name="main_setting_icon_filebrowse_zip" />
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="reader_actionbar_back">@drawable/btn_actionbar_back_d</item>
+    <item type="drawable" name="reader_actionbar_bg_tts">@color/dodgerblue_50</item>
+    <item type="drawable" name="reader_icon_page_direction_left" />
+    <item type="drawable" name="reader_icon_page_direction_left_on" />
+    <item type="drawable" name="reader_icon_page_direction_right" />
+    <item type="drawable" name="reader_icon_page_direction_right_on" />
+</resources>

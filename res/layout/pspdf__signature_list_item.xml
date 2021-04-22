@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.framework.ui.dialog.signatures.SignatureView android:id="@id/pspdf__signature_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginStart="16.0dip" />
+    <FrameLayout android:id="@id/pspdf__signer_chip_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <com.pspdfkit.framework.ui.dialog.signatures.SignerChip android:layout_gravity="start|center" android:id="@id/pspdf__signer_chip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" />
+    </FrameLayout>
+</merge>

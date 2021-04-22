@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/slategray_20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:id="@id/reader_text_search_result_background" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/RidiReaderTextSearchList" />
+    <FrameLayout android:layout_gravity="center" android:id="@android:id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/empty_text" android:visibility="gone" android:text="검색 결과가 없습니다." style="@style/RidiReaderTextSearchEmptyText" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:paddingStart="@dimen/pspdf__inspector_padding" android:paddingEnd="@dimen/pspdf__inspector_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.ui.LocalizedTextView android:textSize="@dimen/pspdf__inspector_text_size" android:gravity="center_vertical" android:id="@id/pspdf__font_view" android:paddingTop="@dimen/pspdf__inspector_vertical_padding" android:paddingBottom="@dimen/pspdf__inspector_vertical_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:minWidth="100.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/pspdf__font_checkmark" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/pspdf__ic_done" android:scaleType="center" android:minWidth="24.0dip" android:contentDescription="@null" />
+</LinearLayout>

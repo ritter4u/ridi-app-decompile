@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d označb</item>
+        <item quantity="zero">Brez označb</item>
+        <item quantity="one">%d označba</item>
+        <item quantity="two">%d označbi</item>
+        <item quantity="few">%d označb</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d črte</item>
+        <item quantity="one">%d črta</item>
+        <item quantity="two">%d črti</item>
+        <item quantity="few">%d črte</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d strani</item>
+        <item quantity="one">%d stran</item>
+        <item quantity="two">%d strani</item>
+        <item quantity="few">%d strani</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d najdenih zadetkov</item>
+        <item quantity="zero">Ni najdenih zadetkov</item>
+        <item quantity="one">%d najden zadetek</item>
+        <item quantity="two">%d najdena zadetka</item>
+        <item quantity="few">%d najdenih zadetkov</item>
+    </plurals>
+</resources>

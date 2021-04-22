@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d Annotations</item>
+        <item quantity="zero">No Annotations</item>
+        <item quantity="one">%d Annotation</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d Lines</item>
+        <item quantity="one">%d Line</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d Pages</item>
+        <item quantity="one">%d Page</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d matches found</item>
+        <item quantity="zero">No matches found</item>
+        <item quantity="one">%d match found</item>
+    </plurals>
+</resources>

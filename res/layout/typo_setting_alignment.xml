@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/RidiTheme.White" android:orientation="horizontal" android:id="@id/alignment_setting_container" android:layout_width="fill_parent" android:layout_height="51.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reader_typo_setting_icon_alignment" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="28.0dip">
+        <View android:id="@id/alignment_divider" android:background="@color/reader_settings_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/alignment_label_text" android:text="문단 정렬" style="@style/RidiTypoSettingCategory" />
+        <RelativeLayout android:gravity="end|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/alignment_divider" android:layout_toEndOf="@id/alignment_label_text">
+            <TextView android:textSize="15.0dip" android:textColor="@color/typo_setting_current_alignment_text" android:gravity="end|center" android:id="@id/current_alignment" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="4.0dip" />
+            <ImageView android:id="@id/current_alignment_arrow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/reader_typo_setting_icon_arrow_bottom" android:contentDescription="@null" android:layout_marginEnd="11.0dip" android:layout_toEndOf="@id/current_alignment" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

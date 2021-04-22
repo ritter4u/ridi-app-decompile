@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.view.ReaderToolbar android:background="?readerBarBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/reader_series_navigation_stub" android:layout="@layout/reader_series_navigation_bar" android:inflatedId="@id/reader_series_navigation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/reader_series_navigation_height" />
+    <View android:background="?readerBarDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="?readerBarBackground" android:layout_width="fill_parent" android:layout_height="@dimen/reader_toolbar_menu_height" android:baselineAligned="false" android:paddingStart="28.0dip" android:paddingEnd="@dimen/reader_toolbar_menu_padding">
+        <include layout="@layout/reader_toolbar_navigation" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/reader_toolbar_menu_container" android:layout_width="360.0dip" android:layout_height="fill_parent" android:paddingStart="@dimen/reader_toolbar_menu_padding">
+            <include layout="@layout/reader_toolbar_menu" />
+        </LinearLayout>
+    </LinearLayout>
+</com.ridi.books.viewer.reader.view.ReaderToolbar>

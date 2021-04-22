@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_review" android:title="리뷰" app:actionLayout="@layout/reader_actionbar_review" app:showAsAction="always" />
+    <item android:icon="?readerActionBarSearchIcon" android:id="@id/action_search" android:title="검색" app:showAsAction="always" />
+    <item android:icon="?readerActionBarBookmarkIcon" android:id="@id/action_bookmark" android:title="책갈피" app:showAsAction="always" />
+</menu>

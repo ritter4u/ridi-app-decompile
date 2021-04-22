@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d merknader</item>
+        <item quantity="zero">Ingen merknader</item>
+        <item quantity="one">%d merknad</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d linjer</item>
+        <item quantity="zero">%d linjer</item>
+        <item quantity="one">%d linje</item>
+        <item quantity="two">%d linjer</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d sider</item>
+        <item quantity="one">%d side</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d treff</item>
+        <item quantity="zero">Ingen treff</item>
+        <item quantity="one">%d treff</item>
+    </plurals>
+</resources>

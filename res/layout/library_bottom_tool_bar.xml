@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/red_60" android:id="@id/remove_button" android:text="삭제" android:layout_alignParentStart="true" style="@style/RidiLibraryBottomToolBarButton" />
+    <TextView android:textColor="@color/red_60" android:id="@id/remove_books_button" android:text="파일 삭제" android:layout_toEndOf="@id/remove_button" android:layout_alignParentStart="true" style="@style/RidiLibraryBottomToolBarButton" />
+    <TextView android:textColor="@color/red_60" android:id="@id/disable_button" android:text="해제" android:layout_alignParentEnd="true" style="@style/RidiLibraryBottomToolBarButton" />
+    <TextView android:textColor="@color/dodgerblue_40" android:id="@id/change_reading_state_button" android:text="독서 상태 변경" android:layout_toEndOf="@id/remove_books_button" style="@style/RidiLibraryBottomToolBarButton" />
+    <TextView android:textColor="@color/dodgerblue_40" android:id="@id/hide_books_button" android:text="숨기기" android:layout_toEndOf="@id/remove_books_button" style="@style/RidiLibraryBottomToolBarButton" />
+    <TextView android:textColor="@color/dodgerblue_40" android:id="@id/move_books_button" android:text="이동" android:layout_alignParentEnd="true" style="@style/RidiLibraryBottomToolBarButton" />
+    <TextView android:textColor="@color/dodgerblue_40" android:id="@id/add_books_to_shelf_button" android:text="추가" android:layout_alignParentEnd="true" style="@style/RidiLibraryBottomToolBarButton" />
+    <TextView android:textColor="@color/dodgerblue_40" android:id="@id/download_button" android:text="다운로드" android:layout_alignParentEnd="true" style="@style/RidiLibraryBottomToolBarButton" />
+</merge>

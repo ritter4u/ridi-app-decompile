@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="com_appboy_card_background_border_bottom">1.5dip</dimen>
+    <dimen name="com_appboy_card_background_border_left">1.5dip</dimen>
+    <dimen name="com_appboy_card_background_border_right">1.5dip</dimen>
+    <dimen name="com_appboy_card_background_border_top">1.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_bottom">1.5dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_left">1.5dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_right">1.5dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_top">1.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_shadow_bottom">1.0dip</dimen>
+    <dimen name="reader_series_navigation_left_padding">0.0dip</dimen>
+    <dimen name="reader_series_navigation_right_padding">0.0dip</dimen>
+    <dimen name="tw__login_btn_drawable_padding">5.0dip</dimen>
+    <dimen name="tw__login_btn_height">40.0dip</dimen>
+    <dimen name="tw__login_btn_left_padding">10.0dip</dimen>
+    <dimen name="tw__login_btn_right_padding">15.0dip</dimen>
+    <dimen name="tw__login_btn_text_size">16.0sp</dimen>
+    <dimen name="library_book_cover_height_grid">102.0dip</dimen>
+    <dimen name="library_book_cover_width_grid">72.0dip</dimen>
+    <dimen name="library_book_height_grid">132.0dip</dimen>
+    <dimen name="library_book_width_grid">90.0dip</dimen>
+</resources>

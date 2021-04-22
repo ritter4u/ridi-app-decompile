@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:scrollbarThumbVertical="@drawable/ridiselect_scrollbar_thumb" android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/RidiWebView" />
+    <FrameLayout android:id="@id/loading_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar style="@style/RidiLoadingSpinner.Center" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ridiselect_top_bar" android:background="@color/bluegray_90" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_logo_ridiselect" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+    </FrameLayout>
+    <com.ridi.books.viewer.common.view.NetworkErrorView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ridiselect_top_bar" />
+</RelativeLayout>

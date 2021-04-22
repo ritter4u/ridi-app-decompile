@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Appboy.InAppMessage.Full" parent="@style/Appboy.InAppMessage">
+        <item name="android:background">@drawable/com_appboy_inappmessage_modal_background</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">450.0dip</item>
+        <item name="android:layout_height">720.0dip</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="RidiAppLockPasscodeKey" parent="@style/RidiAppLockPasscodeKeyCommon">
+        <item name="android:textColor">@drawable/app_lock_sel_passcode_key_text</item>
+        <item name="android:background">@drawable/app_lock_btn_passcode_key_bg</item>
+        <item name="android:layout_width">110.0dip</item>
+    </style>
+    <style name="RidiAppLockPasscodeKeyPad" parent="@style/RidiAppLockPasscodeKeyPadCommon">
+        <item name="android:layout_height">70.0dip</item>
+    </style>
+    <style name="RidiAppLockPasscodeSubcontainer.Info" parent="@style/RidiAppLockPasscodeSubcontainer">
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="RidiAppLockPasscodeSubcontainer.KeyPad" parent="@style/RidiAppLockPasscodeSubcontainer">
+        <item name="android:gravity">top</item>
+        <item name="android:paddingTop">20.0dip</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

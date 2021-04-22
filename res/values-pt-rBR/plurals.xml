@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d anotações</item>
+        <item quantity="zero">Nenhuma anotação</item>
+        <item quantity="one">%d anotação</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d Linhas</item>
+        <item quantity="zero">%d Linha</item>
+        <item quantity="one">%d Linha</item>
+        <item quantity="two">%d Linhas</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d Páginas</item>
+        <item quantity="one">%d Página</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d correspondências encontradas</item>
+        <item quantity="zero">Nenhuma correspondência encontrada</item>
+        <item quantity="one">%d correspondência encontrada</item>
+    </plurals>
+</resources>

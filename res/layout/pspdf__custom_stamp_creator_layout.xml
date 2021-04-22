@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pspdf__custom_stamp_creator_dialog_image" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:contentDescription="@null" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pspdf__custom_stamp_creator_dialog_image" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/pspdf__custom_stamp_creator_dialog_linear_container" android:paddingBottom="76.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.pspdfkit.ui.LocalizedEditText android:textSize="18.0sp" android:id="@id/pspdf__custom_stamp_creator_dialog_text" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/pspdf__stamp_text" android:maxLines="1" android:imeOptions="actionDone" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <com.pspdfkit.ui.LocalizedSwitch android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:gravity="center_vertical" android:id="@id/pspdf__custom_stamp_creator_dialog_color_date_switch" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/pspdf__date_switch" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+            <com.pspdfkit.ui.LocalizedSwitch android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:gravity="center_vertical" android:id="@id/pspdf__custom_stamp_creator_dialog_color_time_switch" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/pspdf__time_switch" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/pspdf__custom_stamp_creator_dialog_floating_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+</merge>

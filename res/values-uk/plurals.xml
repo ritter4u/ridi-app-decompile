@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d анотації</item>
+        <item quantity="zero">Немає анотацій</item>
+        <item quantity="one">%d анотація</item>
+        <item quantity="few">%d анотації</item>
+        <item quantity="many">%d анотацій</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d лінії</item>
+        <item quantity="one">%d ліній</item>
+        <item quantity="few">%d лінії</item>
+        <item quantity="many">%d ліній</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d сторінки</item>
+        <item quantity="one">%d сторінка</item>
+        <item quantity="few">%d сторінки</item>
+        <item quantity="many">%d сторінок</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">Знайдено %d співпадіння</item>
+        <item quantity="zero">Співпадінь не знайдено</item>
+        <item quantity="one">Знайдено %d співпадіння</item>
+        <item quantity="few">Знайдено %d співпадіння</item>
+        <item quantity="many">Знайдено %d співпадінь</item>
+    </plurals>
+</resources>

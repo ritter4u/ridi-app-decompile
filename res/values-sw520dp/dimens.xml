@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pspdf__scrollable_thumbnail_height">114.0dip</dimen>
+    <dimen name="pspdf__scrollable_thumbnail_width">82.0dip</dimen>
+    <dimen name="pspdf__thumbnail_height">57.0dip</dimen>
+    <dimen name="pspdf__thumbnail_width">41.0dip</dimen>
+</resources>

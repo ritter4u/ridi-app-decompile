@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/white_15" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+        <View android:layout_gravity="end" android:background="@color/white_15" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/page_control_guide_first_arrow" android:text="이전 페이지" app:drawableTopCompat="@drawable/reader_icon_page_control_coach_mark_arrow_left" style="@style/CoachMarkTextView" />
+    </FrameLayout>
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+    <FrameLayout android:background="@color/white_15" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+        <View android:layout_gravity="start" android:background="@color/white_15" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:id="@id/page_control_guide_second_arrow" android:text="다음 페이지" app:drawableTopCompat="@drawable/reader_icon_page_control_coach_mark_arrow_right" style="@style/CoachMarkTextView" />
+    </FrameLayout>
+</merge>

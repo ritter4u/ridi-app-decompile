@@ -1,0 +1,1697 @@
+.class public Lio/realm/DefaultRealmModuleMediator;
+.super Lz/c/c1/m;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lio/realm/annotations/RealmModule;
+.end annotation
+
+
+# static fields
+.field public static final a:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Ljava/lang/Class<",
+            "+",
+            "Lz/c/c0;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/util/HashSet;
+
+    const/16 v1, 0x9
+
+    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(I)V
+
+    .line 2
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 3
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 5
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 6
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 7
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 8
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 9
+    const-class v1, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 10
+    const-class v1, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 11
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    move-result-object v0
+
+    sput-object v0, Lio/realm/DefaultRealmModuleMediator;->a:Ljava/util/Set;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lz/c/c1/m;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/util/Map;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/Class<",
+            "+",
+            "Lz/c/c0;",
+            ">;",
+            "Lio/realm/internal/OsObjectSchemaInfo;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/HashMap;
+
+    const/16 v1, 0x9
+
+    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
+
+    .line 2
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    .line 3
+    sget-object v2, Lz/c/k0;->Q:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 4
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    .line 6
+    sget-object v2, Lz/c/s0;->g:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 7
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    .line 9
+    sget-object v2, Lz/c/u0;->l:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 10
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    .line 12
+    sget-object v2, Lz/c/o0;->i:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 13
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    .line 15
+    sget-object v2, Lz/c/w0;->g:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 16
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 17
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    .line 18
+    sget-object v2, Lz/c/q0;->j:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 19
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 20
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    .line 21
+    sget-object v2, Lz/c/m0;->i:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 22
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 23
+    const-class v1, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    .line 24
+    sget-object v2, Lz/c/a1;->o:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 25
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 26
+    const-class v1, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    .line 27
+    sget-object v2, Lz/c/y0;->g:Lio/realm/internal/OsObjectSchemaInfo;
+
+    .line 28
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public a(Ljava/lang/Class;Ljava/lang/Object;Lz/c/c1/n;Lz/c/c1/c;ZLjava/util/List;)Lz/c/c0;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Lz/c/c0;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TE;>;",
+            "Ljava/lang/Object;",
+            "Lz/c/c1/n;",
+            "Lz/c/c1/c;",
+            "Z",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)TE;"
+        }
+    .end annotation
+
+    .line 49
+    sget-object v0, Lz/c/a;->i:Lz/c/a$d;
+
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/a$c;
+
+    .line 50
+    :try_start_0
+    move-object v2, p2
+
+    check-cast v2, Lz/c/a;
+
+    move-object v1, v0
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move v5, p5
+
+    move-object v6, p6
+
+    invoke-virtual/range {v1 .. v6}, Lz/c/a$c;->a(Lz/c/a;Lz/c/c1/n;Lz/c/c1/c;ZLjava/util/List;)V
+
+    .line 51
+    invoke-static {p1}, Lz/c/c1/m;->c(Ljava/lang/Class;)V
+
+    .line 52
+    const-class p2, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 53
+    new-instance p2, Lz/c/k0;
+
+    invoke-direct {p2}, Lz/c/k0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 54
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 55
+    :cond_0
+    :try_start_1
+    const-class p2, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    .line 56
+    new-instance p2, Lz/c/s0;
+
+    invoke-direct {p2}, Lz/c/s0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 57
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 58
+    :cond_1
+    :try_start_2
+    const-class p2, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_2
+
+    .line 59
+    new-instance p2, Lz/c/u0;
+
+    invoke-direct {p2}, Lz/c/u0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 60
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 61
+    :cond_2
+    :try_start_3
+    const-class p2, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_3
+
+    .line 62
+    new-instance p2, Lz/c/o0;
+
+    invoke-direct {p2}, Lz/c/o0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 63
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 64
+    :cond_3
+    :try_start_4
+    const-class p2, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_4
+
+    .line 65
+    new-instance p2, Lz/c/w0;
+
+    invoke-direct {p2}, Lz/c/w0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    .line 66
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 67
+    :cond_4
+    :try_start_5
+    const-class p2, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_5
+
+    .line 68
+    new-instance p2, Lz/c/q0;
+
+    invoke-direct {p2}, Lz/c/q0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .line 69
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 70
+    :cond_5
+    :try_start_6
+    const-class p2, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_6
+
+    .line 71
+    new-instance p2, Lz/c/m0;
+
+    invoke-direct {p2}, Lz/c/m0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+
+    .line 72
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 73
+    :cond_6
+    :try_start_7
+    const-class p2, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_7
+
+    .line 74
+    new-instance p2, Lz/c/a1;
+
+    invoke-direct {p2}, Lz/c/a1;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_0
+
+    .line 75
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 76
+    :cond_7
+    :try_start_8
+    const-class p2, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_8
+
+    .line 77
+    new-instance p2, Lz/c/y0;
+
+    invoke-direct {p2}, Lz/c/y0;-><init>()V
+
+    invoke-virtual {p1, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
+
+    .line 78
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    return-object p1
+
+    .line 79
+    :cond_8
+    :try_start_9
+    invoke-static {p1}, Lz/c/c1/m;->d(Ljava/lang/Class;)Lio/realm/exceptions/RealmException;
+
+    move-result-object p1
+
+    throw p1
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_0
+
+    :catchall_0
+    move-exception p1
+
+    .line 80
+    invoke-virtual {v0}, Lz/c/a$c;->a()V
+
+    .line 81
+    throw p1
+.end method
+
+.method public a(Lz/c/c0;ILjava/util/Map;)Lz/c/c0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Lz/c/c0;",
+            ">(TE;I",
+            "Ljava/util/Map<",
+            "Lz/c/c0;",
+            "Lz/c/c1/l$a<",
+            "Lz/c/c0;",
+            ">;>;)TE;"
+        }
+    .end annotation
+
+    .line 138
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    .line 139
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    .line 140
+    check-cast p1, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/k0;->a(Lcom/ridi/books/viewer/common/library/models/Book;IILjava/util/Map;)Lcom/ridi/books/viewer/common/library/models/Book;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 141
+    :cond_0
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 142
+    check-cast p1, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/s0;->a(Lcom/ridi/books/viewer/common/library/models/ShelfCollection;IILjava/util/Map;)Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 143
+    :cond_1
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 144
+    check-cast p1, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/u0;->a(Lcom/ridi/books/viewer/common/library/models/ShelfOperation;IILjava/util/Map;)Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 145
+    :cond_2
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 146
+    check-cast p1, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/o0;->a(Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;IILjava/util/Map;)Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 147
+    :cond_3
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    .line 148
+    check-cast p1, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/w0;->a(Lcom/ridi/books/viewer/common/library/models/Shelf;IILjava/util/Map;)Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 149
+    :cond_4
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 150
+    check-cast p1, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/q0;->a(Lcom/ridi/books/viewer/common/library/models/ShelfBook;IILjava/util/Map;)Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 151
+    :cond_5
+    const-class v1, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    .line 152
+    check-cast p1, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/m0;->a(Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;IILjava/util/Map;)Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 153
+    :cond_6
+    const-class v1, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_7
+
+    .line 154
+    check-cast p1, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/a1;->a(Lcom/ridi/books/viewer/reader/annotations/models/Annotation;IILjava/util/Map;)Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 155
+    :cond_7
+    const-class v1, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    .line 156
+    check-cast p1, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    invoke-static {p1, v2, p2, p3}, Lz/c/y0;->a(Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;IILjava/util/Map;)Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lz/c/c0;
+
+    return-object p1
+
+    .line 157
+    :cond_8
+    invoke-static {v0}, Lz/c/c1/m;->d(Ljava/lang/Class;)Lio/realm/exceptions/RealmException;
+
+    move-result-object p1
+
+    throw p1
+.end method
+
+.method public a(Lz/c/w;Lz/c/c0;ZLjava/util/Map;Ljava/util/Set;)Lz/c/c0;
+    .locals 13
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Lz/c/c0;",
+            ">(",
+            "Lz/c/w;",
+            "TE;Z",
+            "Ljava/util/Map<",
+            "Lz/c/c0;",
+            "Lz/c/c1/l;",
+            ">;",
+            "Ljava/util/Set<",
+            "Lio/realm/ImportFlag;",
+            ">;)TE;"
+        }
+    .end annotation
+
+    move-object v0, p1
+
+    move-object v1, p2
+
+    .line 82
+    const-class v2, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    const-class v3, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    const-class v4, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    const-class v5, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    const-class v6, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    const-class v7, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    const-class v8, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    const-class v9, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    const-class v10, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    instance-of v11, v1, Lz/c/c1/l;
+
+    if-eqz v11, :cond_0
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
+
+    move-result-object v11
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v11
+
+    .line 83
+    :goto_0
+    invoke-virtual {v11, v10}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_1
+
+    .line 84
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 85
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 86
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v10}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 87
+    check-cast v2, Lz/c/k0$a;
+
+    .line 88
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/k0;->a(Lz/c/w;Lz/c/k0$a;Lcom/ridi/books/viewer/common/library/models/Book;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/common/library/models/Book;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 89
+    :cond_1
+    invoke-virtual {v11, v9}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_2
+
+    .line 90
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 91
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 92
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v9}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 93
+    check-cast v2, Lz/c/s0$a;
+
+    .line 94
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/s0;->a(Lz/c/w;Lz/c/s0$a;Lcom/ridi/books/viewer/common/library/models/ShelfCollection;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 95
+    :cond_2
+    invoke-virtual {v11, v8}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_3
+
+    .line 96
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 97
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 98
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v8}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 99
+    check-cast v2, Lz/c/u0$a;
+
+    .line 100
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/u0;->a(Lz/c/w;Lz/c/u0$a;Lcom/ridi/books/viewer/common/library/models/ShelfOperation;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 101
+    :cond_3
+    invoke-virtual {v11, v7}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_4
+
+    .line 102
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 103
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 104
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v7}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 105
+    check-cast v2, Lz/c/o0$a;
+
+    .line 106
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/o0;->a(Lz/c/w;Lz/c/o0$a;Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 107
+    :cond_4
+    invoke-virtual {v11, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_5
+
+    .line 108
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 109
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 110
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v6}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 111
+    check-cast v2, Lz/c/w0$a;
+
+    .line 112
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/w0;->a(Lz/c/w;Lz/c/w0$a;Lcom/ridi/books/viewer/common/library/models/Shelf;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 113
+    :cond_5
+    invoke-virtual {v11, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_6
+
+    .line 114
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 115
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 116
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v5}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 117
+    check-cast v2, Lz/c/q0$a;
+
+    .line 118
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/q0;->a(Lz/c/w;Lz/c/q0$a;Lcom/ridi/books/viewer/common/library/models/ShelfBook;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 119
+    :cond_6
+    invoke-virtual {v11, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_7
+
+    .line 120
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 121
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 122
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v4}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 123
+    check-cast v2, Lz/c/m0$a;
+
+    .line 124
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/m0;->a(Lz/c/w;Lz/c/m0$a;Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 125
+    :cond_7
+    invoke-virtual {v11, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_8
+
+    .line 126
+    iget-object v2, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 127
+    invoke-virtual {v2}, Lz/c/h0;->a()V
+
+    .line 128
+    iget-object v2, v2, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v2, v3}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 129
+    check-cast v2, Lz/c/a1$a;
+
+    .line 130
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/a1;->a(Lz/c/w;Lz/c/a1$a;Lcom/ridi/books/viewer/reader/annotations/models/Annotation;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 131
+    :cond_8
+    invoke-virtual {v11, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_9
+
+    .line 132
+    iget-object v3, v0, Lz/c/w;->j:Lz/c/h0;
+
+    .line 133
+    invoke-virtual {v3}, Lz/c/h0;->a()V
+
+    .line 134
+    iget-object v3, v3, Lz/c/h0;->f:Lz/c/c1/b;
+
+    invoke-virtual {v3, v2}, Lz/c/c1/b;->a(Ljava/lang/Class;)Lz/c/c1/c;
+
+    move-result-object v2
+
+    .line 135
+    check-cast v2, Lz/c/y0$a;
+
+    .line 136
+    move-object v3, v1
+
+    check-cast v3, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    move-object v0, p1
+
+    move-object v1, v2
+
+    move-object v2, v3
+
+    move/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    invoke-static/range {v0 .. v5}, Lz/c/y0;->a(Lz/c/w;Lz/c/y0$a;Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;ZLjava/util/Map;Ljava/util/Set;)Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lz/c/c0;
+
+    return-object v0
+
+    .line 137
+    :cond_9
+    invoke-static {v11}, Lz/c/c1/m;->d(Ljava/lang/Class;)Lio/realm/exceptions/RealmException;
+
+    move-result-object v0
+
+    throw v0
+.end method
+
+.method public a(Ljava/lang/Class;Lio/realm/internal/OsSchemaInfo;)Lz/c/c1/c;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "+",
+            "Lz/c/c0;",
+            ">;",
+            "Lio/realm/internal/OsSchemaInfo;",
+            ")",
+            "Lz/c/c1/c;"
+        }
+    .end annotation
+
+    .line 29
+    invoke-static {p1}, Lz/c/c1/m;->c(Ljava/lang/Class;)V
+
+    .line 30
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 31
+    invoke-static {p2}, Lz/c/k0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/k0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 32
+    :cond_0
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 33
+    invoke-static {p2}, Lz/c/s0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/s0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 34
+    :cond_1
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 35
+    invoke-static {p2}, Lz/c/u0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/u0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 36
+    :cond_2
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 37
+    invoke-static {p2}, Lz/c/o0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/o0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 38
+    :cond_3
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 39
+    invoke-static {p2}, Lz/c/w0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/w0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 40
+    :cond_4
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 41
+    invoke-static {p2}, Lz/c/q0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/q0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 42
+    :cond_5
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    .line 43
+    invoke-static {p2}, Lz/c/m0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/m0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 44
+    :cond_6
+    const-class v0, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    .line 45
+    invoke-static {p2}, Lz/c/a1;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/a1$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 46
+    :cond_7
+    const-class v0, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    .line 47
+    invoke-static {p2}, Lz/c/y0;->a(Lio/realm/internal/OsSchemaInfo;)Lz/c/y0$a;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 48
+    :cond_8
+    invoke-static {p1}, Lz/c/c1/m;->d(Ljava/lang/Class;)Lio/realm/exceptions/RealmException;
+
+    move-result-object p1
+
+    throw p1
+.end method
+
+.method public b(Ljava/lang/Class;)Ljava/lang/String;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "+",
+            "Lz/c/c0;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lz/c/c1/m;->c(Ljava/lang/Class;)V
+
+    .line 2
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/Book;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string p1, "Book"
+
+    return-object p1
+
+    .line 3
+    :cond_0
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/ShelfCollection;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string p1, "ShelfCollection"
+
+    return-object p1
+
+    .line 4
+    :cond_1
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/ShelfOperation;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const-string p1, "ShelfOperation"
+
+    return-object p1
+
+    .line 5
+    :cond_2
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/SearchBookUnit;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    const-string p1, "SearchBookUnit"
+
+    return-object p1
+
+    .line 6
+    :cond_3
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/Shelf;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    const-string p1, "Shelf"
+
+    return-object p1
+
+    .line 7
+    :cond_4
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/ShelfBook;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    const-string p1, "ShelfBook"
+
+    return-object p1
+
+    .line 8
+    :cond_5
+    const-class v0, Lcom/ridi/books/viewer/common/library/models/DisplayBookUnit;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    const-string p1, "DisplayBookUnit"
+
+    return-object p1
+
+    .line 9
+    :cond_6
+    const-class v0, Lcom/ridi/books/viewer/reader/annotations/models/Annotation;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    const-string p1, "Annotation"
+
+    return-object p1
+
+    .line 10
+    :cond_7
+    const-class v0, Lcom/ridi/books/viewer/reader/annotations/models/AnnotationCollection;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_8
+
+    const-string p1, "AnnotationCollection"
+
+    return-object p1
+
+    .line 11
+    :cond_8
+    invoke-static {p1}, Lz/c/c1/m;->d(Ljava/lang/Class;)Lio/realm/exceptions/RealmException;
+
+    move-result-object p1
+
+    throw p1
+.end method
+
+.method public b()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/lang/Class<",
+            "+",
+            "Lz/c/c0;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 12
+    sget-object v0, Lio/realm/DefaultRealmModuleMediator;->a:Ljava/util/Set;
+
+    return-object v0
+.end method
+
+.method public c()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method

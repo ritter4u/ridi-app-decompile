@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/web_view_container" android:visibility="invisible" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.ridi.books.viewer.reader.epub.EPubReaderActivity$WebViewContainer">
+        <com.ridi.books.viewer.reader.epub.HighlightView android:id="@id/highlight_view" android:background="@android:color/transparent" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </view>
+    <ImageView android:id="@id/snapshot_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <include layout="@layout/epub_scroll_guide_spinner" />
+    <include layout="@layout/center_loading_spinner" />
+</FrameLayout>

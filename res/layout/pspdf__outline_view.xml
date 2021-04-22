@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.framework.views.utils.OutlinePagerTabView android:id="@id/pspdf__view_pager_tab_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/pspdf__outline_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

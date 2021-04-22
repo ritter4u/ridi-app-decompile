@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="?libraryContextMenuDialogBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/library_context_menu_info" />
+        <TextView android:id="@id/change_title_author_button" android:text="제목/저자 변경" app:drawableStartCompat="@drawable/main_library_dialog_icon_info" style="@style/RidiLibraryContextDialogMenuItemText" />
+        <TextView android:id="@id/info_button" android:text="서점에서 책 정보 보기" app:drawableStartCompat="@drawable/main_library_dialog_icon_info" style="@style/RidiLibraryContextDialogMenuItemText" />
+        <TextView android:id="@id/create_shortcut_button" android:text="바탕화면에 바로가기 만들기" app:drawableStartCompat="@drawable/main_library_dialog_icon_create_shortcut" style="@style/RidiLibraryContextDialogMenuItemText" />
+        <TextView android:id="@id/hide_button" app:drawableStartCompat="@drawable/main_library_dialog_icon_hide" style="@style/RidiLibraryContextDialogMenuItemText" />
+        <TextView android:textColor="?libraryContextMenuDialogDeleteTextColor" android:id="@id/delete_button" android:text="파일 삭제" app:drawableStartCompat="@drawable/main_library_dialog_icon_delete" style="@style/RidiLibraryContextDialogMenuItemText" />
+    </LinearLayout>
+</ScrollView>

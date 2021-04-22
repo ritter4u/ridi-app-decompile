@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/recent_book_row" android:background="@android:color/transparent" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cover_image" android:layout_width="30.0dip" android:layout_height="45.0dip" android:layout_marginTop="1.0dip" android:contentDescription="@null" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="나미야 잡화점의 기적" android:maxLines="1" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/white_80" android:ellipsize="end" android:id="@id/author_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="히가시노 게이고" android:maxLines="1" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/reading_progress" android:layout_width="fill_parent" android:layout_height="4.0dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/widget_recent_book_progress" android:layout_centerInParent="true" android:layout_toStartOf="@id/reading_progress_text_container" style="?android:progressBarStyleHorizontal" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reading_progress_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true">
+                <TextView android:textSize="10.0dip" android:textColor="@color/white_80" android:id="@id/reading_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:includeFontPadding="false" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/white_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 읽음" android:includeFontPadding="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

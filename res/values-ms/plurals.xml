@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d Anotasi</item>
+        <item quantity="zero">Tiada Anotasi</item>
+        <item quantity="one">%d Anotasi</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d Baris</item>
+        <item quantity="zero">%d Baris</item>
+        <item quantity="one">%d Baris</item>
+        <item quantity="two">%d Baris</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d Halaman</item>
+        <item quantity="one">%d Halaman</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d padanan dijumpai</item>
+        <item quantity="zero">Tiada padanan dijumpai</item>
+        <item quantity="one">%d padanan dijumpai</item>
+    </plurals>
+</resources>

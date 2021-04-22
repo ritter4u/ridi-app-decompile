@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">หมายเหตุ %d แห่ง</item>
+        <item quantity="zero">ไม่มีหมายเหตุ</item>
+        <item quantity="one">หมายเหตุ %d แห่ง</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d บรรทัด</item>
+        <item quantity="zero">%d บรรทัด</item>
+        <item quantity="one">%d บรรทัด</item>
+        <item quantity="two">%d บรรทัด</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d หน้า</item>
+        <item quantity="one">%d หน้า</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">พบ %d ข้อมูลที่ตรง</item>
+        <item quantity="zero">ไม่มีข้อมูลที่ตรง</item>
+        <item quantity="one">พบ %d ข้อมูลที่ตรง</item>
+    </plurals>
+</resources>

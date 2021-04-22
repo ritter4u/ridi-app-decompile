@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d Anodiad</item>
+        <item quantity="zero">Dim Anodiadau</item>
+        <item quantity="one">%d Anodiad</item>
+        <item quantity="two">%d Anodiad</item>
+        <item quantity="few">%d Anodiad</item>
+        <item quantity="many">%d Anodiad</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d Llinell</item>
+        <item quantity="zero">%d Llinell</item>
+        <item quantity="one">%d Llinell</item>
+        <item quantity="two">%d Linell</item>
+        <item quantity="few">%d Llinell</item>
+        <item quantity="many">%d Llinell</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d Tudalen</item>
+        <item quantity="zero">%d Tudalen</item>
+        <item quantity="one">%d Tudalen</item>
+        <item quantity="two">%d Dudalen</item>
+        <item quantity="few">%d Tudalen</item>
+        <item quantity="many">%d Tudalen</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">Canfuwyd %d eitem sy’n cyfateb</item>
+        <item quantity="zero">Heb ganfod unrhyw eitemau sy’n cyfateb</item>
+        <item quantity="one">Canfuwyd %d eitem sy’n cyfateb</item>
+        <item quantity="two">Canfuwyd %d eitem sy’n cyfateb</item>
+        <item quantity="few">Canfuwyd %d eitem sy’n cyfateb</item>
+        <item quantity="many">Canfuwyd %d eitem sy’n cyfateb</item>
+    </plurals>
+</resources>

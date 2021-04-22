@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reader_setting_footnote_popup_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/footnote_popup" android:text="팝업으로 주석 보기" style="@style/RidiReaderSettingItem" />
+        <androidx.appcompat.widget.SwitchCompat android:theme="@style/RidiTheme.White" android:id="@id/footnote_popup_button" style="@style/RidiSettingSwitch" />
+    </RelativeLayout>
+    <View style="@style/RidiReaderSettingDivider" />
+</LinearLayout>

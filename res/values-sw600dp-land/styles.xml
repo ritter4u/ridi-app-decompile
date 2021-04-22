@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RidiAppLockPasscodeContainer">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="RidiAppLockPasscodeKeyPad" parent="@style/RidiAppLockPasscodeKeyPadCommon">
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="RidiAppLockPasscodeSubcontainer" parent="@style/RidiAppLockPasscodeSubcontainerCommon">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+    </style>
+</resources>

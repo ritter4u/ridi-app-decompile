@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_result_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/reader_fragment_title_bar_height">
+            <ImageButton android:layout_gravity="start|center" android:id="@id/close" android:contentDescription="@null" style="@style/RidiReaderFragmentTitleBarIcon" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip">
+                <ImageButton android:id="@id/clear_search_keyword_text" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="@dimen/reader_fragment_title_bar_icon_side" android:layout_height="@dimen/reader_fragment_title_bar_icon_side" android:src="@drawable/icon_clear_search_keyword" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@null" android:alpha="0.0" android:layout_marginEnd="@dimen/reader_fragment_title_bar_right_icon_margin_right" android:layout_alignParentEnd="true" />
+                <EditText android:textSize="20.0dip" android:textColor="@color/bluegray_70" android:textColorHint="@color/bluegray_70_50" android:id="@id/keyword_text" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.5dip" android:hint="검색" android:maxLines="1" android:maxLength="@integer/search_max_length" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@null" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/clear_search_keyword_text" />
+                <View android:background="@color/slategray_20" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignBottom="@id/keyword_text" android:layout_marginEnd="@dimen/reader_text_search_border_right_margin" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <Button android:id="@id/body_search_button" android:text="본문" android:contentDescription="@null" style="@style/RidiReaderTextSearchTabButton" />
+                <Button android:id="@id/kor_dic_search_button" android:text="국어사전" android:contentDescription="@null" style="@style/RidiReaderTextSearchTabButton" />
+                <Button android:id="@id/eng_dic_search_button" android:text="영어사전" android:contentDescription="@null" style="@style/RidiReaderTextSearchTabButton" />
+                <Button android:id="@id/wikipedia_search_button" android:text="백과사전" android:contentDescription="@null" style="@style/RidiReaderTextSearchTabButton" />
+            </LinearLayout>
+            <com.ridi.books.viewer.common.view.UnderlineTabIndicator android:layout_gravity="bottom" android:id="@id/underline_indicator" android:background="@color/slategray_30" android:layout_width="0.0dip" android:layout_height="2.0dip" app:tabCount="4" />
+        </FrameLayout>
+        <include layout="@layout/index_list_header_divider" />
+    </LinearLayout>
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/text_search_result_contents" />
+        <View android:background="@drawable/reader_bg_fragment_title_bar_shadow" android:layout_width="fill_parent" android:layout_height="6.0dip" android:contentDescription="@null" />
+    </FrameLayout>
+</LinearLayout>

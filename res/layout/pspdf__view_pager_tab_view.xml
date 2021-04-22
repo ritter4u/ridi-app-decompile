@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/pspdf__view_pager_tab_buttons_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/pspdf__color_gray_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

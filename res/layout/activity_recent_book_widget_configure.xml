@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="30.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/recent_book_widget_preview_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/round_solid_black" android:scaleType="fitXY" android:contentDescription="@null" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/widget_recent_book_border_bottom" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip">
+                    <ImageView android:id="@id/app_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/widget_logo" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" />
+                    <ImageButton android:id="@id/setting_button" android:background="?android:actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_recent_book_icon_settings" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+                    <TextView android:textColor="@color/white_80" android:background="?android:actionBarItemBackground" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="편집" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="13.0dip" android:layout_toStartOf="@id/setting_button" />
+                </RelativeLayout>
+                <include layout="@layout/widget_recent_book_item" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/slategray_100_80" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="22.0dip" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/display_book_count_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="표시할 책 권 수" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/white_80" android:id="@id/recent_book_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/display_book_count_guide" />
+            <ImageButton android:id="@id/minus_recent_book_count_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sel_widget_setting_stepper_minus" android:contentDescription="@null" android:layout_toStartOf="@id/plus_recent_book_count_button" />
+            <ImageButton android:id="@id/plus_recent_book_count_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sel_widget_setting_stepper_plus" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/white_10" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="28.0dip" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="투명도" android:layout_marginEnd="6.0dip" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/white_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="80%" />
+            <SeekBar android:id="@id/alpha_seek_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="165" android:progressDrawable="@drawable/widget_recent_book_seekbar_progress" android:minHeight="2.0dip" android:thumb="@drawable/widget_recent_book_seekbar_thumb" android:layout_weight="1.0" android:rotation="180.0" android:splitTrack="false" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/white_70" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15%" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cancel_button" android:background="@drawable/sel_widget_bluegray_border_rounded" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="취소" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ok_button" android:background="@drawable/sel_default_dodgerblue_rounded" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="확인" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

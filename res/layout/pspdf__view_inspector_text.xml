@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pspdf__text_picker_title_row" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/pspdf__inspector_padding" android:paddingEnd="@dimen/pspdf__inspector_padding">
+        <com.pspdfkit.ui.LocalizedTextView android:textSize="@dimen/pspdf__inspector_text_size" android:gravity="center_vertical" android:id="@id/pspdf__label" android:paddingTop="@dimen/pspdf__inspector_vertical_padding" android:paddingBottom="@dimen/pspdf__inspector_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.pspdfkit.framework.ui.views.UnderlinedTextView android:textSize="@dimen/pspdf__inspector_text_size" android:gravity="end" android:layout_gravity="end" android:id="@id/pspdf__text" android:paddingTop="@dimen/pspdf__inspector_vertical_padding" android:paddingBottom="@dimen/pspdf__inspector_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/pspdf__text_input_container" android:paddingTop="@dimen/pspdf__inspector_vertical_padding" android:paddingBottom="@dimen/pspdf__inspector_vertical_padding" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/pspdf__inspector_padding" android:paddingEnd="@dimen/pspdf__inspector_padding">
+        <com.pspdfkit.ui.LocalizedEditText android:textSize="@dimen/pspdf__inspector_text_size" android:id="@id/pspdf__text_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="-4.0dip" android:layout_marginEnd="-4.0dip" />
+    </FrameLayout>
+</LinearLayout>

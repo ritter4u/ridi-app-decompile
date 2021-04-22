@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/volume_key_paging_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/volume_key_paging" android:text="볼륨키로 페이지 이동" style="@style/RidiReaderSettingItem" />
+    <androidx.appcompat.widget.SwitchCompat android:theme="@style/RidiTheme.White" android:id="@id/volume_key_paging_button" style="@style/RidiSettingSwitch" />
+</RelativeLayout>

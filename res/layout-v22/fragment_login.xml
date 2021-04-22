@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_login_0" android:background="?themeBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <EditText android:textSize="15.0dip" android:textColor="?loginTextColor" android:textColorHint="@color/slategray_50" android:id="@id/login_id" android:tag="binding_1" android:background="?loginIdTextBackground" android:nextFocusDown="@id/password_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="리디북스 아이디" android:singleLine="true" android:inputType="text" android:imeOptions="actionNext" android:paddingStart="15.0dip" android:autofillHints="@null" />
+        <EditText android:textSize="15.0dip" android:textColor="?loginTextColor" android:textColorHint="@color/slategray_50" android:id="@id/login_password" android:tag="binding_2" android:background="?loginPasswordTextBackground" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="비밀번호" android:inputType="textPassword" android:imeOptions="actionDone" android:paddingStart="15.0dip" android:autofillHints="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:background="?loginRoundBottomBackground" android:layout_width="fill_parent" android:layout_height="40.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="?loginFindIdPasswordTextColor" android:id="@id/find_id_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="아이디 찾기" />
+        <View android:background="?loginDivider" android:layout_width="1.0dip" android:layout_height="12.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="?loginFindIdPasswordTextColor" android:layout_gravity="center" android:id="@id/find_password_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="비밀번호 찾기" />
+    </LinearLayout>
+    <Button android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="end" android:id="@id/login_button" android:background="@drawable/round_bg_login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="로그인" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="?signupTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="아직 리디북스 회원이 아니신가요?" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="?signupTextColor" android:id="@id/signup_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="회원가입" android:drawablePadding="3.0dip" android:layout_marginStart="4.0dip" app:drawableEndCompat="?signupArrowIcon" />
+    </LinearLayout>
+</LinearLayout>

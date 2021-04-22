@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pspdf__note_editor_item_card_margin_vertical" card_view:cardBackgroundColor="@color/pspdf__color_white" card_view:cardCornerRadius="@dimen/pspdf__note_editor_item_card_corner_radius" card_view:cardElevation="@dimen/pspdf__note_editor_item_card_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/pspdf__style_box_card" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/pspdf__note_editor_style_box_header" />
+        <LinearLayout android:orientation="vertical" android:id="@id/pspdf__note_item_style_box_detail_view_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/pspdf__horizontal_line" android:background="@color/pspdf__color_gray_light" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.pspdfkit.framework.annotations.note.ui.NoteEditorStyleBoxDetailsView android:id="@id/pspdf__note_item_style_box_details" android:padding="@dimen/pspdf__note_editor_item_style_box_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

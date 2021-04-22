@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/pspdf__signature_throbber" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.pspdfkit.ui.LocalizedTextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/pspdf__digital_signature_signing" />
+        <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pspdf__signature_text_container" android:paddingTop="16.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <com.pspdfkit.ui.LocalizedTextView android:gravity="center" android:id="@id/pspdf__signature_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pspdf__fragment_password_hint" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <com.google.android.material.textfield.TextInputEditText android:id="@id/pspdf__signature_password_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pspdf__password" android:inputType="textPassword">
+                <requestFocus />
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <com.pspdfkit.ui.LocalizedTextView android:id="@id/pspdf__signature_sign_cancel" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_toStartOf="@id/pspdf__signature_sign_button" style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+            <com.pspdfkit.ui.LocalizedTextView android:enabled="false" android:id="@id/pspdf__signature_sign_button" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pspdf__sign" android:layout_alignParentEnd="true" style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

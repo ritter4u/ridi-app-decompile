@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/white_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <inset android:insetRight="@dimen/reader_tts_control_popover_border_width">
+            <shape android:id="@android:id/mask" android:shape="rectangle">
+                <solid android:color="@color/reader_tts_control_popover_inside_bg" />
+                <corners android:bottomRightRadius="4.0dip" />
+            </shape>
+        </inset>
+    </item>
+</ripple>

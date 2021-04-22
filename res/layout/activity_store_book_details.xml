@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ridi.books.viewer.main.view.MainTopBar android:id="@id/main_top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/main_top_bar_height" />
+    <View android:background="?mainTopBarShadow" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <androidx.fragment.app.FragmentContainerView android:name="com.ridi.books.viewer.main.fragment.LinkCheckingWebViewFragment" android:id="@id/fragment_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

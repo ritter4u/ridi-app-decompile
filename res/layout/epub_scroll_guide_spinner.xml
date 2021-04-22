@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.epub.EPubScrollGuideSpinner android:layout_gravity="center" android:id="@id/scroll_guide_spinner" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_spinner_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reader_scroll_guide_spinner_circle" android:contentDescription="@null" />
+    <ImageView android:id="@id/guide_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reader_icon_arrow_scrollguide_large_up" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/guide_spinner" style="@style/RidiLoadingSpinner.Center" />
+</com.ridi.books.viewer.reader.epub.EPubScrollGuideSpinner>

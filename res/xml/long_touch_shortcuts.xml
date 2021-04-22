@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/long_touch_shortcut_icon_store" android:enabled="true">
+        <intent android:targetPackage="com.initialcoms.ridi" android:action="com.ridi.books.viewer.action.ACTION_CLICK_LONG_TOUCH_SHORTCUT_OPEN_STORE" android:targetClass="com.ridi.books.viewer.common.activity.LongTouchShortcutDelegationActivity" />
+    </shortcut>
+</shortcuts>

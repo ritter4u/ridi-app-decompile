@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/pspdf__ic_undo" android:id="@id/pspdf__note_editor_toolbar_item_undo" android:orderInCategory="1" android:title="@string/pspdf__undo" app:showAsAction="always" />
+    <item android:icon="@drawable/pspdf__ic_redo" android:id="@id/pspdf__note_editor_toolbar_item_redo" android:orderInCategory="2" android:title="@string/pspdf__redo" app:showAsAction="always" />
+    <item android:icon="@drawable/pspdf__ic_delete" android:id="@id/pspdf__note_editor_toolbar_item_delete" android:orderInCategory="3" android:title="@string/pspdf__remove" app:showAsAction="always" />
+</menu>

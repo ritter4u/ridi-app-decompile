@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/pspdf__note_editor_option_delete_reply" android:visible="false" android:orderInCategory="100" android:title="@string/pspdf__delete_comment" />
+    <item android:id="@id/pspdf__note_editor_option_share" android:visible="false" android:orderInCategory="100" android:title="@string/pspdf__share" />
+    <item android:id="@id/pspdf__note_editor_option_set_reply_status" android:visible="false" android:orderInCategory="101" android:title="@string/pspdf__set_reply_status" />
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.view.PagingReaderLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/paging_effect_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/paging_effect_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/reader_page_layout_stub" android:inflatedId="@id/reader_page_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/reader_info_display_layout" />
+        <include layout="@layout/reader_bookmark_right" />
+    </FrameLayout>
+    <include layout="@layout/reader_waiting_text" />
+    <com.ridi.books.viewer.reader.view.ReaderMagnifyView android:id="@id/magnify_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.ridi.books.viewer.reader.view.PagingReaderLayout>

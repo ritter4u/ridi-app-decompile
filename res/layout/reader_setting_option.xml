@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/reader_settings_text" android:id="@id/main_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.SwitchCompat android:theme="@style/RidiTheme.White" android:id="@id/switch_button" android:layout_alignParentTop="true" android:layout_centerInParent="false" style="@style/RidiSettingSwitch" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/slategray_60" android:id="@id/sub_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/main_text_view" android:lineSpacingExtra="4.0dip" android:layout_marginEnd="15.0dip" android:layout_toStartOf="@id/switch_button" android:layout_alignStart="@id/main_text_view" />
+</merge>

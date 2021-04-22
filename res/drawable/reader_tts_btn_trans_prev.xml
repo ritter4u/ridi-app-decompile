@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/reader_tts_btn_prev" />
+    <item android:drawable="@drawable/reader_tts_btn_prev_pressed" />
+</transition>

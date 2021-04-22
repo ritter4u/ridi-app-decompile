@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.view.TocListItemView android:orientation="horizontal" android:background="@drawable/reader_bg_rectangle_item" android:layout_width="fill_parent" android:layout_height="71.5dip" android:paddingStart="@dimen/reader_toc_list_item_padding_left" android:paddingEnd="@dimen/reader_toc_list_item_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toc_list_item_text" />
+</com.ridi.books.viewer.reader.view.TocListItemView>

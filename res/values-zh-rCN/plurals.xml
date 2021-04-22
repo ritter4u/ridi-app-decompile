@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d 个批注</item>
+        <item quantity="zero">没有批注</item>
+        <item quantity="one">%d 个批注</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d 行</item>
+        <item quantity="zero">%d 行</item>
+        <item quantity="one">%d 行</item>
+        <item quantity="two">%d 行</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d 页</item>
+        <item quantity="one">%d 页</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">找到 %d 个匹配</item>
+        <item quantity="zero">没有找到匹配</item>
+        <item quantity="one">找到 %d 个匹配</item>
+    </plurals>
+</resources>

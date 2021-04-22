@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d شرح توضيحي</item>
+        <item quantity="zero">لا توجد شروح توضيحية</item>
+        <item quantity="one">شرح توضيحي واحد</item>
+        <item quantity="two">شرحان توضيحيان</item>
+        <item quantity="few">%d شروح توضيحية</item>
+        <item quantity="many">%d شرح توضيحي</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d سطر</item>
+        <item quantity="zero">صفر سطر</item>
+        <item quantity="one">سطر واحد</item>
+        <item quantity="two">سطران</item>
+        <item quantity="few">%d أسطر</item>
+        <item quantity="many">%d سطرًا</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d صفحات</item>
+        <item quantity="zero">الكل (%d صفحة)</item>
+        <item quantity="one">صفحة واحدة</item>
+        <item quantity="two">الكل (صفحتان)</item>
+        <item quantity="few">الكل (%d صفحات)</item>
+        <item quantity="many">%d صفحة</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">تم العثور على %d نتيجة متوافقة</item>
+        <item quantity="zero">لم يتم العثور على نتائج متوافقة</item>
+        <item quantity="one">تم العثور على نتيجة واحدة متوافقة</item>
+        <item quantity="two">تم العثور على نتيجتين</item>
+        <item quantity="few">تم العثور على %d نتائج</item>
+        <item quantity="many">تم العثور على %d نتيجة</item>
+    </plurals>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d個註解</item>
+        <item quantity="zero">沒有註解</item>
+        <item quantity="one">%d個註解</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d 行</item>
+        <item quantity="zero">%d 行</item>
+        <item quantity="one">%d 行</item>
+        <item quantity="two">%d 行</item>
+        <item quantity="many">%d 行</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d頁</item>
+        <item quantity="one">%d頁</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">找到%d個配對</item>
+        <item quantity="zero">找不到配對</item>
+        <item quantity="one">找到%d個配對</item>
+    </plurals>
+</resources>

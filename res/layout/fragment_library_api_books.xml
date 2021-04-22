@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_library_api_books_0" android:background="?themeBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/library_books" layout="@layout/library_books" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/recent_book_bar" layout="@layout/recent_book_bar" />
+        <com.ridi.books.viewer.main.view.library.LibraryPaginationBar android:id="@id/pagination_bar" android:tag="binding_2" android:background="?libraryBottomToolBarBackground" android:layout_width="fill_parent" android:layout_height="51.0dip" />
+    </LinearLayout>
+    <com.ridi.books.viewer.common.view.NetworkErrorView android:id="@id/error_view" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

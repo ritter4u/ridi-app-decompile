@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d adnotacje</item>
+        <item quantity="zero">Brak adnotacji</item>
+        <item quantity="one">%d adnotacja</item>
+        <item quantity="two">%d adnotacje</item>
+        <item quantity="few">%d adnotacje</item>
+        <item quantity="many">%d adnotacji</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d wierszy</item>
+        <item quantity="zero">%d wierszy</item>
+        <item quantity="one">%d wiersz</item>
+        <item quantity="two">%d wiersze</item>
+        <item quantity="few">%d wiersze</item>
+        <item quantity="many">%d wierszy</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d strony</item>
+        <item quantity="zero">%d stron</item>
+        <item quantity="one">%d strona</item>
+        <item quantity="two">%d strony</item>
+        <item quantity="few">%d strony</item>
+        <item quantity="many">%d stron</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">Znaleziono %d dopasowania</item>
+        <item quantity="zero">Nie znaleziono żadnego dopasowania</item>
+        <item quantity="one">Znaleziono %d dopasowanie</item>
+        <item quantity="two">Znaleziono %d dopasowania</item>
+        <item quantity="few">Znaleziono %d dopasowania</item>
+        <item quantity="many">Znaleziono %d dopasowań</item>
+    </plurals>
+</resources>

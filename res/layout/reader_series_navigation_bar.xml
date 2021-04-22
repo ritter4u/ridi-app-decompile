@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.view.ReaderSeriesNavigationBar android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/reader_series_navigation_left_padding" android:paddingEnd="@dimen/reader_series_navigation_right_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/series_toolbar_first_page" android:text="첫 페이지" android:drawablePadding="10.0dip" android:paddingStart="20.0dip" app:drawableStartCompat="?readerToolBarFirstPageIcon" style="@style/RidiReaderSeriesToolbarButton" />
+    <LinearLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:id="@id/series_toolbar_prev_book" android:drawablePadding="10.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" app:drawableStartCompat="?readerToolBarPreviousBookIcon" style="@style/RidiReaderSeriesToolbarButton" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/series_toolbar_prev_book_progress" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:id="@id/series_toolbar_next_book" android:drawablePadding="10.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" app:drawableEndCompat="?readerToolBarNextBookIcon" style="@style/RidiReaderSeriesToolbarButton" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/series_toolbar_next_book_progress" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</com.ridi.books.viewer.reader.view.ReaderSeriesNavigationBar>

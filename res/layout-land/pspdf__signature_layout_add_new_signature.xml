@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.pspdfkit.framework.ui.dialog.signatures.SignatureCanvasView android:id="@id/pspdf__signature_canvas_view" android:background="@color/pspdf__color_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/pspdf__signature_controls_view" />
+    <RelativeLayout android:id="@id/pspdf__signature_controls_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+        <com.pspdfkit.framework.ui.dialog.signatures.SignatureControllerView android:id="@id/pspdf__signature_controller_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <CheckBox android:id="@id/pspdf__signature_store_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pspdf__store_signature" android:layout_centerInParent="true" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/pspdf__signature_fab_clear_edited_signature" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:elevation="4.0dip" app:fabSize="normal" app:useCompatPadding="true" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/pspdf__signature_fab_accept_edited_signature" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/pspdf__signature_fab_clear_edited_signature" app:elevation="4.0dip" app:fabSize="normal" app:useCompatPadding="true" />
+    </RelativeLayout>
+    <com.pspdfkit.framework.ui.dialog.signatures.SignerChip android:id="@id/pspdf__signature_signer_chip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pspdf__signature_layout_padding" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</merge>

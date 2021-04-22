@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/reader_setting_page_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/reader_setting_reverse_book" android:layout_marginBottom="17.0dip" android:text="터치 설정" style="@style/RidiReaderSettingCategory" />
+        <include layout="@layout/reader_setting_paging_touch_mode" />
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/RidiReaderSettingDivider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/vertical_paging_touch_container" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/slategray_90" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="상/하 터치로 페이지 이동" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/vertical_page_control_button" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/RidiSettingSwitch" />
+        </LinearLayout>
+        <View android:id="@id/volume_key_paging_top_divider" style="@style/RidiReaderSettingDivider" />
+        <TextView android:id="@id/reader_page_setting_text" android:text="페이지 설정" style="@style/RidiReaderSettingCategory" />
+        <include layout="@layout/reader_setting_volume_key_paging" />
+        <View style="@style/RidiReaderSettingDivider" />
+        <include layout="@layout/reader_setting_footnote_popup" />
+        <LinearLayout android:orientation="vertical" android:id="@id/paging_effect_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/reader_setting_paging_effect" />
+            <View style="@style/RidiReaderSettingDivider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/info_display_setting_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/reader_setting_info_display" />
+            <View style="@style/RidiReaderSettingDivider" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/double_page_mode_setting_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/reader_setting_double_page_mode" />
+            <View style="@style/RidiReaderSettingDivider" />
+            <RelativeLayout android:id="@id/double_on_first_page_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/double_on_first_page" android:text="첫 페이지부터 두쪽보기" style="@style/RidiReaderSettingItem" />
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/RidiTheme.White" android:id="@id/double_on_first_page_button" style="@style/RidiSettingSwitch" />
+                <View android:layout_alignParentBottom="true" style="@style/RidiReaderSettingDivider" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/scroll_mode_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ridi.books.viewer.reader.view.ReaderSettingOptionView android:id="@id/scroll_mode" android:background="@drawable/reader_setting_selectable_item_bg" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" app:mainText="스크롤보기" />
+            <View style="@style/RidiReaderSettingDivider" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

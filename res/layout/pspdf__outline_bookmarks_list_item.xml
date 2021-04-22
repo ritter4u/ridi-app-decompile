@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.gridlayout.widget.GridLayout android:paddingTop="5.0dip" android:paddingBottom="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:columnCount="3" app:rowCount="2">
+        <FrameLayout android:layout_width="@dimen/pspdf__bookmark_page_image_width" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginEnd="16.0dip" app:layout_column="0" app:layout_gravity="center|top" app:layout_row="0" app:layout_rowSpan="2">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/pspdf_bookmark_list_page_image_container" android:layout_width="@dimen/pspdf__bookmark_page_image_width" android:layout_height="@dimen/pspdf__bookmark_page_image_height" app:cardElevation="6.0dip">
+                <ImageView android:id="@id/pspdf_bookmark_list_page_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+        <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" android:id="@id/pspdf__bookmark_list_item_title" android:paddingTop="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minLines="1" app:layout_column="1" app:layout_columnWeight="1.0" app:layout_row="0" />
+        <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button" android:gravity="top" android:id="@id/pspdf__bookmark_list_item_page_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" app:layout_column="2" app:layout_gravity="top" app:layout_row="0" />
+        <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" android:ellipsize="end" android:id="@id/pspdf__bookmark_list_item_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="5" android:layout_marginEnd="24.0dip" app:layout_column="1" app:layout_columnSpan="2" app:layout_columnWeight="1.0" app:layout_row="1" />
+    </androidx.gridlayout.widget.GridLayout>
+    <ImageView android:layout_gravity="end" android:id="@id/pspdf__bookmark_list_drag_handle" android:layout_width="24.0dip" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@null" android:layout_marginEnd="16.0dip" />
+    <View android:layout_gravity="bottom" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</FrameLayout>

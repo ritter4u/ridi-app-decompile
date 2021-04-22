@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/waiting_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <FrameLayout android:id="@id/progress_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ridi.books.viewer.common.view.CircularProgressView android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent" app:backgroundColor="?downloadProgressBarBackground" app:foregroundColor="?downloadProgressBarForeground" />
+        <ImageView android:id="@id/stop_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_library_btn_book_download_stop" android:contentDescription="@null" />
+        <com.ridi.books.viewer.common.view.DotsProgressBar android:gravity="center" android:id="@id/group_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/download_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+</merge>

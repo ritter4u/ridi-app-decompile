@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/RidiTheme.Dialog.Holo.Light" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reader_bg_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/slategray_60" android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="형광펜 색상 변경" />
+        <include layout="@layout/index_list_header_divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/highlight_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/yellow_highlight_button" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginEnd="@dimen/reader_reading_note_highlight_dialog_icon_margin">
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_icon_highlight_tab_btn" android:contentDescription="@null" app:tint="#ffe7d87c" />
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_sel_highlight_dialog_button_border" android:contentDescription="@null" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/green_highlight_button" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginStart="@dimen/reader_reading_note_highlight_dialog_icon_margin" android:layout_marginEnd="@dimen/reader_reading_note_highlight_dialog_icon_margin">
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_icon_highlight_tab_btn" android:contentDescription="@null" app:tint="#ffbed370" />
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_sel_highlight_dialog_button_border" android:contentDescription="@null" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/purple_highlight_button" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginStart="@dimen/reader_reading_note_highlight_dialog_icon_margin" android:layout_marginEnd="@dimen/reader_reading_note_highlight_dialog_icon_margin">
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_icon_highlight_tab_btn" android:contentDescription="@null" app:tint="#ffbe93cc" />
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_sel_highlight_dialog_button_border" android:contentDescription="@null" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/blue_highlight_button" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginStart="@dimen/reader_reading_note_highlight_dialog_icon_margin" android:layout_marginEnd="@dimen/reader_reading_note_highlight_dialog_icon_margin">
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_icon_highlight_tab_btn" android:contentDescription="@null" app:tint="#ff7cb9c8" />
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_sel_highlight_dialog_button_border" android:contentDescription="@null" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/pink_highlight_button" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginStart="@dimen/reader_reading_note_highlight_dialog_icon_margin" android:layout_marginEnd="@dimen/reader_reading_note_highlight_dialog_icon_margin">
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_icon_highlight_tab_btn" android:contentDescription="@null" app:tint="#ffd6959c" />
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_sel_highlight_dialog_button_border" android:contentDescription="@null" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/underline_button" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginStart="@dimen/reader_reading_note_highlight_dialog_icon_margin">
+                <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/reader_reading_note_sel_underline_tab_large_button" android:contentDescription="@null" />
+            </FrameLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

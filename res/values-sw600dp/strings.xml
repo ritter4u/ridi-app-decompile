@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="replace_device_description3">동시 이용은 최대 %d대까지 가능합니다. 대체할 기기를 선택해주세요.</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RidiTheme.Reader.CustomActionBar.Dark" parent="@style/RidiTheme.Reader.CustomActionBar">
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="readerActionBarBookmarkIcon">@drawable/reader_actionbar_icon_bookmark_d</item>
+        <item name="readerActionBarBookmarkUseIcon">@drawable/reader_actionbar_icon_bookmark_use_d</item>
+        <item name="readerActionBarReviewIcon">@drawable/reader_actionbar_icon_review_d</item>
+        <item name="readerActionBarSearchIcon">@drawable/reader_actionbar_icon_search_d</item>
+        <item name="readerActionPopupItemNavigateIconColor">@color/white_50</item>
+        <item name="readerActionPopupItemPressedBackgroundDrawable">@drawable/reader_bg_action_item_d</item>
+        <item name="readerActionPopupItemTextColor">@color/white</item>
+        <item name="readerBarBackIcon">@drawable/reader_btn_actionbar_back_d</item>
+        <item name="readerBarDividerColor">@color/reader_divider_d</item>
+        <item name="readerBarTextColor">@color/reader_actionbar_text_d</item>
+        <item name="readerBarTopDividerBackground">@drawable/top_divider_bg_d</item>
+        <item name="readerSeriesNavigationBarText">@drawable/reader_series_navigation_bar_text_d</item>
+        <item name="readerToolBarCommentIcon">@drawable/reader_icon_comment_d</item>
+        <item name="readerToolBarFirstPageIcon">@drawable/reader_sel_first_page_d</item>
+        <item name="readerToolBarHistoryBackDrawable">@drawable/reader_sel_history_back_d</item>
+        <item name="readerToolBarItemTextColor">@drawable/reader_sel_toolbar_text_d</item>
+        <item name="readerToolBarNextBookIcon">@drawable/reader_sel_next_book_d</item>
+        <item name="readerToolBarPageIcon">@drawable/reader_icon_page_d</item>
+        <item name="readerToolBarPreviousBookIcon">@drawable/reader_sel_previous_book_d</item>
+        <item name="readerToolBarProgressColor">@color/white_15</item>
+        <item name="readerToolBarReaderSettingsIcon">@drawable/reader_icon_reader_settings_d</item>
+        <item name="readerToolBarReadingNoteIcon">@drawable/reader_icon_reading_note_d</item>
+        <item name="readerToolBarReverseFirstPageIcon">@drawable/reader_sel_reverse_first_page_d</item>
+        <item name="readerToolBarScrollIcon">@drawable/reader_icon_scroll_d</item>
+        <item name="readerToolBarTTSIcon">@drawable/reader_icon_tts_d</item>
+        <item name="readerToolBarTocIcon">@drawable/reader_icon_toc_d</item>
+        <item name="readerToolBarTypoSettingsIcon">@drawable/reader_sel_typo_settings_d</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.epub.EpubTypoSettingsPanel style="@style/RidiTypoSettingsPanel"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/typo_setting_top_shadow" />
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/typo_setting_color_theme" />
+            <include layout="@layout/typo_setting_brightness" />
+            <include layout="@layout/typo_setting_divider" />
+            <include layout="@layout/typo_setting_font_type" />
+            <include layout="@layout/typo_setting_font_size" />
+            <include layout="@layout/typo_setting_divider" />
+            <include layout="@layout/typo_setting_line_height" />
+            <include layout="@layout/typo_setting_paragraph_spacing" />
+            <include layout="@layout/typo_setting_column_width" />
+            <include layout="@layout/typo_setting_alignment" />
+        </LinearLayout>
+    </ScrollView>
+</com.ridi.books.viewer.reader.epub.EpubTypoSettingsPanel>

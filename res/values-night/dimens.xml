@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="chip_background_selected_alpha">@dimen/chip_background_selected_alpha_dark</item>
+    <dimen name="com_appboy_content_card_background_border_bottom">0.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_left">0.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_right">0.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_top">0.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_shadow_bottom">0.0dip</dimen>
+</resources>

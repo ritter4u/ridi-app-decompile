@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?themeBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="?currentPathBackground" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_compat_height">
+        <TextView android:textSize="14.0dip" android:textColor="?currentPathTextColor" android:ellipsize="middle" android:id="@id/current_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[현재 경로]" android:singleLine="true" android:layout_centerVertical="true" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_toStartOf="@id/description" android:layout_alignParentStart="true" />
+        <TextView android:textSize="14.0dip" android:textColor="?currentPathTextColor" android:id="@id/description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" android:layout_toStartOf="@id/import_button" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="?fileAddButtonTextColor" android:gravity="center" android:id="@id/import_button" android:background="?fileAddButtonBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/file_browser_height_margin" android:layout_marginBottom="@dimen/file_browser_height_margin" android:minWidth="56.0dip" android:minHeight="36.0dip" android:text="추가" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginEnd="@dimen/file_browser_height_margin" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="?navigationBarDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?libraryBookListDivider" android:dividerHeight="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">注釈%d件</item>
+        <item quantity="zero">注釈がありません</item>
+        <item quantity="one">注釈%d件</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d行</item>
+        <item quantity="zero">%d行</item>
+        <item quantity="one">%d行</item>
+        <item quantity="two">%d行</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%dページ</item>
+        <item quantity="one">%dページ</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">一致する項目が%d件見つかりました</item>
+        <item quantity="zero">一致する項目が見つかりません</item>
+        <item quantity="one">一致する項目が%d件見つかりました</item>
+    </plurals>
+</resources>

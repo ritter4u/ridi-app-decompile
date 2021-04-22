@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attributes app:tabGravity="fill" app:tabIndicatorColor="?topBarTabIndicatorColor" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2.0dip" app:tabPaddingEnd="8.0dip" app:tabPaddingStart="8.0dip" app:tabTextAppearance="@style/RidiTopBarTabTitleText" xmlns:app="http://schemas.android.com/apk/res-auto" />

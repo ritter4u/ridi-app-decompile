@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/custom_snack_bar_0" android:background="@drawable/main_library_custom_toast_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_library_icon_toast_success" android:contentDescription="@null" android:layout_marginEnd="11.0dip" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/green_40" android:id="@id/message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="선택한 책을 책장에 추가했습니다." android:maxLines="1" android:layout_weight="1.0" />
+    <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="책장 보기" android:drawablePadding="1.0dip" android:layout_marginEnd="12.0dip" app:drawableEndCompat="@drawable/main_library_icon_toast_action" />
+    <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_library_icon_toast_close" android:contentDescription="@null" />
+</LinearLayout>

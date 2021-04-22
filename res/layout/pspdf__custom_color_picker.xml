@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/pspdf__slider_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.pspdfkit.framework.ui.views.ValueSliderView android:id="@id/pspdf__custom_color_slider_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.pspdfkit.framework.ui.views.ValueSliderView android:id="@id/pspdf__custom_color_slider_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.pspdfkit.framework.ui.views.ValueSliderView android:id="@id/pspdf__custom_color_slider_3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <androidx.gridlayout.widget.GridLayout android:id="@id/pspdf__hex_container" android:padding="@dimen/pspdf__custom_color_picker_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" app:columnCount="3" app:rowCount="2">
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/pspdf__color_picker_hex_color_value" app:layout_column="0" app:layout_row="0" />
+            <TextView android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="\#" app:layout_column="1" app:layout_columnWeight="1.0" app:layout_row="0" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/pspdf__hex_entry_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_marginEnd="8.0dip" app:errorEnabled="true" app:layout_column="2" app:layout_row="0">
+                <com.pspdfkit.ui.editor.ScreenAdjustingTextInputEditText android:id="@id/pspdf__hex_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minEms="4" android:maxLength="6" android:digits="0123456789abcdefABCDEF" android:inputType="textVisiblePassword|textCapCharacters|textNoSuggestions" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/pspdf__paste_hex_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pspdf__color_picker_paste_from_clipboard" app:layout_columnSpan="3" app:layout_gravity="end|center|top" app:layout_row="1" style="@style/Base.Widget.AppCompat.Button.Borderless.Colored" />
+        </androidx.gridlayout.widget.GridLayout>
+    </FrameLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/pspdf__custom_color_picker_switcher" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/pspdf__custom_color_picker_hex" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pspdf__color_picker_hex" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/pspdf__custom_color_picker_hsl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pspdf__color_picker_hsl" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/pspdf__custom_color_picker_rgb" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/pspdf__color_picker_rgb" android:layout_weight="1.0" />
+    </RadioGroup>
+</merge>

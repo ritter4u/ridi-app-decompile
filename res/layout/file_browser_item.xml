@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/file_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" />
+    <TextView android:textSize="16.0sp" android:textColor="?fileRowItemTextColor" android:id="@id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[파일명]" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toStartOf="@id/check_button" android:layout_toEndOf="@id/file_type_icon" />
+    <CheckBox android:id="@id/check_button" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/RidiFileBrowserCheckBox" />
+</RelativeLayout>

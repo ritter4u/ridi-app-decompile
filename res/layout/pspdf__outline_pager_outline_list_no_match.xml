@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.ui.LocalizedTextView android:textSize="21.0sp" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_gravity="center" android:id="@id/pspdf__outline_no_match_text" android:padding="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pspdf__search_no_matches" />
+</FrameLayout>

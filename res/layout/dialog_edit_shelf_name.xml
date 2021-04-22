@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="?dialogTitleTextColor" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0dip" android:textColor="?dialogMessageTextColor" android:id="@id/message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="22.0dip" />
+    <EditText android:textSize="16.0dip" android:id="@id/edit_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="text" />
+    <View android:id="@id/edit_text_underline" android:background="#ff009688" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="8.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/red_50" android:id="@id/validation_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="최대 50자까지 쓸 수 있습니다." />
+</LinearLayout>

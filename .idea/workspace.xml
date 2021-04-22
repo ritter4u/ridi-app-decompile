@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4b8ce1b-6dfe-446e-8c0e-872fd3d6a26b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ridibooks.rep/idata/01/~00000014.db/db.1.gbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ridibooks.rep/idata/01/~00000014.db/db.2.gbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ridibooks.rep/projectState" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ridibooks.rep/projectState" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="80aayccz" />
+  </component>
+  <component name="ProjectId" id="1rNrx5O8Awt4EgVuCquV5dNoxLB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4b8ce1b-6dfe-446e-8c0e-872fd3d6a26b" name="Default Changelist" comment="" />
+      <created>1618827631682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618827631682</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1007" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619424892093">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1007" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1619424892093" />
+    <state x="1406" y="623" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1619423333078">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1406" y="623" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1619423333078" />
+    <state x="1390" y="348" key="SettingsEditor" timestamp="1619424126136">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1390" y="348" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1619424126136" />
+    <state x="1597" y="298" width="830" height="804" key="find.popup" timestamp="1619414651664">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1597" y="298" width="830" height="804" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1619414651664" />
+    <state x="1552" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1619423881191">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1552" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1619423881191" />
+  </component>
+</project>

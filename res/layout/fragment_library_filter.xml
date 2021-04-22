@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_library_filter_0" android:background="?filterBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip" android:paddingStart="16.0dip">
+        <ImageView android:id="@id/filter_nav_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?filterIconNav" android:contentDescription="@null" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?filterTitleTextColor" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" />
+    </LinearLayout>
+    <View android:background="?filterItemDividerColor" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <FrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/filter_list" android:tag="binding_3" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:choiceMode="singleChoice" />
+        <include android:id="@id/center_loading_spinner" layout="@layout/center_loading_spinner" />
+    </FrameLayout>
+</LinearLayout>

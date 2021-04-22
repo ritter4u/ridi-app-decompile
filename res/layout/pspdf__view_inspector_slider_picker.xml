@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/pspdf__inspector_padding" android:paddingEnd="@dimen/pspdf__inspector_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.ui.LocalizedTextView android:textSize="@dimen/pspdf__inspector_text_size" android:gravity="center_vertical" android:id="@id/pspdf__sliderLabel" android:paddingTop="@dimen/pspdf__inspector_vertical_padding" android:paddingBottom="@dimen/pspdf__inspector_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" />
+    <SeekBar android:id="@id/pspdf__sliderSeekBar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="16.0dip" android:layout_weight="1.0" android:foregroundGravity="center_vertical" />
+    <com.pspdfkit.ui.editor.UnitSelectionEditText android:textSize="@dimen/pspdf__inspector_text_size" android:gravity="center" android:id="@id/pspdf__sliderUnitEditText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dip" android:maxLines="1" android:lines="1" android:singleLine="true" android:selectAllOnFocus="true" android:digits="0123456789 " android:layout_weight="0.0" android:inputType="phone|textNoSuggestions" />
+</LinearLayout>

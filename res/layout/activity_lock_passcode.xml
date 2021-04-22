@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/RidiAppLockPasscodeContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/passcode_info_container_bg" android:paddingStart="@dimen/passcode_info_container_horizontal_padding" android:paddingEnd="@dimen/passcode_info_container_horizontal_padding" style="@style/RidiAppLockPasscodeSubcontainer.Info">
+        <TextView android:textSize="@dimen/passcode_title_text_size" android:textStyle="bold" android:textColor="@color/passcode_title_text" android:gravity="center" android:id="@id/passcode_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="잠금 비밀번호 입력" android:freezesText="true" />
+        <TextView android:textSize="@dimen/passcode_message_text_size" android:textColor="@color/passcode_message_text" android:gravity="center" android:id="@id/passcode_message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passcode_message_text_top_margin" android:text="잠금 비밀번호를 입력해주세요." android:freezesText="true" android:layout_below="@id/passcode_title_text" android:lineSpacingExtra="4.0dip" />
+        <LinearLayout android:id="@id/passcode_input_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/passcode_input_top_margin" android:layout_marginBottom="@dimen/passcode_input_bottom_margin" android:layout_below="@id/passcode_message_text" android:layout_centerHorizontal="true">
+            <EditText android:id="@id/text_passcode_1" style="@style/RidiAppLockPasscodeInputField">
+                <requestFocus />
+            </EditText>
+            <EditText android:id="@id/text_passcode_2" style="@style/RidiAppLockPasscodeInputField" />
+            <EditText android:id="@id/text_passcode_3" style="@style/RidiAppLockPasscodeInputField" />
+            <EditText android:id="@id/text_passcode_4" android:layout_marginEnd="0.0dip" style="@style/RidiAppLockPasscodeInputField" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/passcode_keypad_container_bg" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" style="@style/RidiAppLockPasscodeSubcontainer.KeyPad">
+        <LinearLayout style="@style/RidiAppLockPasscodeKeyPad">
+            <Button android:id="@id/btn_passcode_1" android:tag="1" android:text="1" style="@style/RidiAppLockPasscodeKey" />
+            <Button android:id="@id/btn_passcode_2" android:tag="2" android:text="2" style="@style/RidiAppLockPasscodeKey" />
+            <Button android:id="@id/btn_passcode_3" android:tag="3" android:text="3" style="@style/RidiAppLockPasscodeKey" />
+        </LinearLayout>
+        <LinearLayout style="@style/RidiAppLockPasscodeKeyPad">
+            <Button android:id="@id/btn_passcode_4" android:tag="4" android:text="4" style="@style/RidiAppLockPasscodeKey" />
+            <Button android:id="@id/btn_passcode_5" android:tag="5" android:text="5" style="@style/RidiAppLockPasscodeKey" />
+            <Button android:id="@id/btn_passcode_6" android:tag="6" android:text="6" style="@style/RidiAppLockPasscodeKey" />
+        </LinearLayout>
+        <LinearLayout style="@style/RidiAppLockPasscodeKeyPad">
+            <Button android:id="@id/btn_passcode_7" android:tag="7" android:text="7" style="@style/RidiAppLockPasscodeKey" />
+            <Button android:id="@id/btn_passcode_8" android:tag="8" android:text="8" style="@style/RidiAppLockPasscodeKey" />
+            <Button android:id="@id/btn_passcode_9" android:tag="9" android:text="9" style="@style/RidiAppLockPasscodeKey" />
+        </LinearLayout>
+        <LinearLayout style="@style/RidiAppLockPasscodeKeyPad">
+            <Button android:textSize="@dimen/passcode_key_cancel_text_size" android:id="@id/btn_passcode_cancel" android:text="취소" style="@style/RidiAppLockPasscodeKey" />
+            <Button android:id="@id/btn_passcode_0" android:tag="0" android:text="0" style="@style/RidiAppLockPasscodeKey" />
+            <ImageButton android:id="@id/btn_passcode_delete" android:src="@drawable/app_lock_btn_passcode_delete" android:scaleType="center" android:contentDescription="@null" style="@style/RidiAppLockPasscodeKey" />
+        </LinearLayout>
+        <View android:background="@drawable/app_lock_passcode_keypad_separator" android:layout_width="fill_parent" android:layout_height="@dimen/passcode_input_bottom_separator_height" />
+    </LinearLayout>
+</LinearLayout>

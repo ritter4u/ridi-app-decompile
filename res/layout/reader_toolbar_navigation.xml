@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?readerBarBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/reader_series_navigation_stub" android:layout="@layout/reader_series_navigation_bar" android:inflatedId="@id/reader_series_navigation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/reader_series_navigation_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <View android:background="?readerBarDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="12.0dip">
+            <LinearLayout android:id="@id/reader_toolbar_history_back_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="19.0dip" android:layout_alignParentEnd="true">
+                <ImageButton android:theme="?readerBarItemBackgroundTheme" android:layout_gravity="end" android:id="@id/reader_toolbar_history_back" android:background="?android:actionBarItemBackground" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="37.0dip" android:layout_height="24.0dip" android:src="?readerToolBarHistoryBackDrawable" android:contentDescription="@null" android:paddingStart="9.0dip" android:paddingEnd="9.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/reader_toolbar_history_back_container">
+                <SeekBar android:theme="?readerBarItemBackgroundTheme" android:id="@id/seek_bar" android:paddingTop="9.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:maxHeight="2.0dip" android:paddingStart="6.0dip" android:paddingEnd="7.0dip" android:layout_marginStart="15.0dip" style="@style/RidiReaderSeekbar" />
+                <TextView android:textSize="@dimen/reader_toolbar_item_text_size" android:textColor="?readerBarTextColor" android:id="@id/reader_toolbar_page_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="21.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="?readerBarDividerColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

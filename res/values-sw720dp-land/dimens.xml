@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="passcode_input_bottom_margin">80.0dip</dimen>
+    <dimen name="reader_toolbar_menu_padding">24.0dip</dimen>
+</resources>

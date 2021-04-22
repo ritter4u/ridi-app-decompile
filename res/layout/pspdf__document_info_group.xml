@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/pspdf__document_info_group_margin_top" android:paddingBottom="@dimen/pspdf__document_info_group_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/pspdf__document_info_group_margin_start" android:paddingEnd="@dimen/pspdf__document_info_group_margin_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/pspdf__document_info_group_title_text_size" android:textColor="@color/pspdf__document_info_group_title_text_color" android:id="@id/pspdf__document_info_group_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pspdf__document_info_group_title_margin_bottom" android:fontFamily="serif-medium" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/pspdf__document_info_group_icon" android:layout_width="@dimen/pspdf__document_info_group_icon_size" android:layout_height="@dimen/pspdf__document_info_group_icon_size" android:layout_marginStart="@dimen/pspdf__document_info_group_icon_margin_start" />
+        <LinearLayout android:orientation="vertical" android:id="@id/pspdf__document_info_group_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/pspdf__document_info_item_spacing" android:showDividers="middle" android:layout_marginStart="@dimen/pspdf__document_info_group_content_margin_start" />
+    </RelativeLayout>
+</LinearLayout>

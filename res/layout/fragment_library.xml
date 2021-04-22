@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_library_0" android:background="?themeBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/top_bar" layout="@layout/library_top_bar" />
+    <FrameLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ridi.books.viewer.main.view.library.LibraryTopSubBar android:id="@id/top_sub_bar" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <androidx.viewpager2.widget.ViewPager2 android:id="@id/library_pager" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <androidx.fragment.app.FragmentContainerView android:id="@id/searched_books_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginBottom="61.0dip" layout="@layout/download_count_status" />
+            </FrameLayout>
+            <com.ridi.books.viewer.main.view.library.LibraryBottomToolBar android:layout_gravity="bottom" android:id="@id/bottom_tool_bar" android:background="?libraryBottomToolBarBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/main_nav_bar_height" />
+        </LinearLayout>
+        <include android:id="@id/offline_mode_banner" layout="@layout/library_offline_mode_banner" />
+        <RelativeLayout android:id="@id/download_error_banner" android:visibility="gone" style="@style/RidiLibraryWarningBanner">
+            <TextView android:id="@id/download_error_text" android:layout_toStartOf="@id/download_error_close_button" style="@style/RidiLibraryWarningBannerText" />
+            <TextView android:id="@id/download_error_close_button" android:text="닫기" android:layout_alignParentEnd="true" style="@style/RidiLibraryWarningBannerButton" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

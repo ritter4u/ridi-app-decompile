@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d аннотации</item>
+        <item quantity="zero">Аннотаций нет</item>
+        <item quantity="one">%d аннотация</item>
+        <item quantity="few">%d аннотации</item>
+        <item quantity="many">%d аннотаций</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d строки</item>
+        <item quantity="zero">%d строк</item>
+        <item quantity="one">%d строка</item>
+        <item quantity="two">%d строки</item>
+        <item quantity="few">%d строки</item>
+        <item quantity="many">%d строк</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d страницы</item>
+        <item quantity="one">%d страница</item>
+        <item quantity="few">%d страницы</item>
+        <item quantity="many">%d страниц</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">Обнаружено %d совпадения</item>
+        <item quantity="zero">Совпадений не обнаружено</item>
+        <item quantity="one">Обнаружено %d совпадение</item>
+        <item quantity="few">Обнаружено %d совпадения</item>
+        <item quantity="many">Обнаружено %d совпадений</item>
+    </plurals>
+</resources>

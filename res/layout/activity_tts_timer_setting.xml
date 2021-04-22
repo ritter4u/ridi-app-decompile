@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.common.view.BoundLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:maxHeight="@dimen/reader_tts_timer_setting_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/gray_80" android:paddingTop="2.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="듣기 타이머" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <Button android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="닫기" android:layout_centerVertical="true" android:layout_marginEnd="7.0dip" android:layout_alignParentEnd="true" style="@style/RidiButton.Black" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tts_timer_picker_container" android:layout_width="wrap_content" android:layout_height="@dimen/reader_tts_timer_setting_picker_and_remain_time_container">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TimePicker android:layout_gravity="center_horizontal" android:id="@id/tts_timer_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:timePickerMode="spinner" />
+                    <TextView android:textSize="15.0dip" android:id="@id/tts_timer_minute_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="분" android:layout_marginStart="-10.0dip" android:layout_marginEnd="5.0dip" />
+                </LinearLayout>
+                <View android:background="@color/gray_40" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/reader_tts_timer_description" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="설정한 시간이 끝나면\n듣기 기능이 자동으로 정지됩니다." />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tts_timer_remain_time_container" android:paddingTop="70.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/reader_tts_timer_setting_picker_and_remain_time_container">
+                <TextView android:textSize="18.0sp" android:textColor="@color/gray_40" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tts_timer_remain_time" />
+                <TextView android:textSize="52.0sp" android:id="@id/tts_timer_remain_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="00:00:00" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip">
+                <Button android:textSize="30.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tts_timer_start_button" android:background="@drawable/reader_tts_btn_timer_start" android:layout_width="100.0dip" android:layout_height="100.0dip" android:text="@string/tts_timer_start" />
+                <Button android:textSize="30.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tts_timer_finish_button" android:background="@drawable/reader_tts_btn_timer_finish" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:text="@string/tts_timer_stop" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.ridi.books.viewer.common.view.BoundLinearLayout>

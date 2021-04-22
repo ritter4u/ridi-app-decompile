@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<attributes app:tabGravity="fill" app:tabIndicatorColor="@color/slategray_30" app:tabIndicatorHeight="2.0dip" app:tabTextAppearance="@style/RidiReaderTextSearchTabButton" xmlns:app="http://schemas.android.com/apk/res-auto" />

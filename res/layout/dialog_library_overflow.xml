@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/dialog_library_overflow_0" android:background="?libraryOverflowBackground" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/library_books_option_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="보기 방식" style="@style/RidiLibraryOverflowTitleText" />
+            <TextView android:id="@id/grid_view_button" android:text="표지만 보기" style="@style/RidiLibraryOverflowOptionText" />
+            <TextView android:id="@id/list_view_button" android:text="목록 보기" style="@style/RidiLibraryOverflowOptionText" />
+            <View style="@style/RidiLibraryOverflowDivider" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="정렬 순서" style="@style/RidiLibraryOverflowTitleText" />
+                <LinearLayout android:orientation="vertical" android:id="@id/unit_order_sorting_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/unit_order_ascending_button" android:text="1권부터" style="@style/RidiLibraryOverflowOptionText" />
+                    <TextView android:id="@id/unit_order_descending_button" android:text="마지막 권부터" style="@style/RidiLibraryOverflowOptionText" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/normal_sorting_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/downloaded_date_sorting_button" android:text="최근 다운로드순" style="@style/RidiLibraryOverflowOptionText" />
+                    <TextView android:id="@id/purchase_date_sorting_button" android:text="최근 구매순" style="@style/RidiLibraryOverflowOptionText" />
+                    <TextView android:id="@id/shelves_add_sorting_button" android:text="최근 추가순" style="@style/RidiLibraryOverflowOptionText" />
+                    <TextView android:id="@id/title_sorting_button" android:text="제목 가나다순" style="@style/RidiLibraryOverflowOptionText" />
+                    <TextView android:id="@id/author_sorting_button" android:text="저자 가나다순" style="@style/RidiLibraryOverflowOptionText" />
+                </LinearLayout>
+                <TextView android:id="@id/expiry_sorting_button" android:text="대여 만료 임박순" style="@style/RidiLibraryOverflowOptionText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/reading_filter_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/RidiLibraryOverflowDivider" />
+                <TextView android:text="독서 상태 필터링" style="@style/RidiLibraryOverflowTitleText" />
+                <TextView android:id="@id/none_filter_button" android:text="전체" style="@style/RidiLibraryOverflowOptionText" />
+                <TextView android:id="@id/read_filter_button" android:text="읽음" style="@style/RidiLibraryOverflowOptionText" />
+                <TextView android:id="@id/not_read_filter_button" android:text="읽지 않음" style="@style/RidiLibraryOverflowOptionText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/shelf_edit_option_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/RidiLibraryOverflowDivider" />
+                <TextView android:text="책장 편집" style="@style/RidiLibraryOverflowTitleText" />
+                <TextView android:id="@id/rename_shelf_button" android:text="책장 이름 변경" style="@style/RidiLibraryOverflowOptionText" />
+                <TextView android:id="@id/remove_shelf_button" android:text="책장 삭제" style="@style/RidiLibraryOverflowOptionText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/download_paused_books_buttons_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/RidiLibraryOverflowDivider" />
+                <TextView android:text="다운로드 중지된 책" style="@style/RidiLibraryOverflowTitleText" />
+                <TextView android:textColor="@color/dodgerblue_50" android:id="@id/download_all_paused_books_button" android:text="전체 다운로드" app:drawableStartCompat="@drawable/main_library_icon_overflow_download" style="@style/RidiLibraryOverflowOptionText" />
+                <TextView android:textColor="@color/dodgerblue_50" android:id="@id/remove_all_paused_books_button" android:text="전체 삭제" app:drawableStartCompat="@drawable/main_library_icon_overflow_delete" style="@style/RidiLibraryOverflowOptionText" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/shelves_option_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="책장 정렬 순서" style="@style/RidiLibraryOverflowTitleText" />
+            <TextView android:id="@id/shelf_created_date_sorting_button" android:text="최근 생성순" style="@style/RidiLibraryOverflowOptionText" />
+            <TextView android:id="@id/shelf_name_sorting_button" android:text="이름 가나다순" style="@style/RidiLibraryOverflowOptionText" />
+            <View style="@style/RidiLibraryOverflowDivider" />
+            <TextView android:text="책장 관리" style="@style/RidiLibraryOverflowTitleText" />
+            <TextView android:id="@id/shelf_synchronization_button" style="@style/RidiLibraryOverflowOptionText" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

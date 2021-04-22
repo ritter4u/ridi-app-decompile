@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edit_tool_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/selected_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:layout_weight="1.0" app:drawableStartCompat="@drawable/main_library_icon_book_selected_number" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/select_all_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="전체 선택" />
+        <com.ridi.books.viewer.common.view.UnderlineTextButton android:id="@id/edit_cancel_button" android:text="취소" android:layout_marginStart="13.0dip" style="@style/RidiLibraryTopToolBarButton" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/filter_tool_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/filtered_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="6.0dip" android:layout_centerVertical="true" app:drawableStartCompat="@drawable/main_library_icon_filter" />
+        <TextView android:textSize="11.0dip" android:textColor="@color/white" android:id="@id/filtered_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toStartOf="@id/filter_cancel_button" android:layout_toEndOf="@id/filtered_state" />
+        <com.ridi.books.viewer.common.view.UnderlineTextButton android:id="@id/filter_cancel_button" android:text="필터 해제" android:layout_alignParentEnd="true" style="@style/RidiLibraryTopToolBarButton" />
+    </RelativeLayout>
+</merge>

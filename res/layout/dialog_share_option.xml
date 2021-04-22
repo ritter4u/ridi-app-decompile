@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/RidiTheme.Dialog.Holo.Light" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reader_bg_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/slategray_60" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="공유 방법" android:layout_marginStart="24.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/image_share_button" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="이미지로 멋지게 공유" android:drawablePadding="24.0dip" android:paddingStart="24.0dip" app:drawableStartCompat="@drawable/reader_share_icon_image" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/text_share_button" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="텍스트로 공유" android:drawablePadding="24.0dip" android:paddingStart="24.0dip" app:drawableStartCompat="@drawable/reader_share_icon_text" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/info_toc_label_button" android:text="챕터 제목" style="@style/RidiReaderSettingItem.InfoRadioButton" />
+    <View style="@style/RidiReaderSettingDivider" />
+    <RadioButton android:id="@id/info_page_number_button" android:text="페이지 번호" style="@style/RidiReaderSettingItem.InfoRadioButton" />
+    <View style="@style/RidiReaderSettingDivider" />
+    <RadioButton android:id="@id/info_reading_progress_button" android:text="독서 진행률" style="@style/RidiReaderSettingItem.InfoRadioButton" />
+    <View style="@style/RidiReaderSettingDivider" />
+    <RadioButton android:id="@id/info_clock_button" android:text="시계" style="@style/RidiReaderSettingItem.InfoRadioButton" />
+    <View style="@style/RidiReaderSettingDivider" />
+    <RadioButton android:id="@id/info_none_button" android:text="표시 안 함" style="@style/RidiReaderSettingItem.InfoRadioButton" />
+    <View style="@style/RidiReaderSettingDivider" />
+</merge>

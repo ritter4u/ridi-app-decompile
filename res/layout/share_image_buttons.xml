@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:tag="layout/share_image_buttons_0" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="82.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="16.0dip">
+        <ImageView android:id="@id/gallery_button" android:layout_width="58.0dip" android:layout_height="58.0dip" android:src="@drawable/reader_share_btn_camera" android:contentDescription="@null" android:layout_marginStart="16.0dip" />
+        <FrameLayout android:id="@id/custom_image_button_container" android:visibility="gone" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginStart="10.0dip">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@id/custom_image_button" android:layout_margin="0.0dip" style="@style/RidiShareImageButton" />
+            <ImageView android:layout_gravity="end|bottom|center" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_margin="8.0dip" android:src="@drawable/reader_share_icon_camera" android:contentDescription="@null" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/background_button_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_1" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_2" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_3" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_4" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_5" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_6" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_7" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_8" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_9" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_10" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_11" style="@style/RidiShareImageButton" />
+            <com.makeramen.roundedimageview.RoundedImageView android:src="@drawable/reader_share_bg_btn_12" style="@style/RidiShareImageButton" />
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/auto_next_book_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/auto_next_book_text" android:text="다음 권 자동으로 보기" style="@style/RidiReaderSettingItem" />
+    <androidx.appcompat.widget.SwitchCompat android:theme="@style/RidiTheme.White" android:id="@id/auto_next_book_button" style="@style/RidiSettingSwitch" />
+</RelativeLayout>

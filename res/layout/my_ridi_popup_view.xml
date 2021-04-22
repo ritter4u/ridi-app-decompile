@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/popup_arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?myRidiPopupArrowUpDrawable" android:contentDescription="@null" android:layout_marginEnd="15.0dip" />
+    <FrameLayout android:id="@id/popup_content" android:background="?myRidiPopupBackgroundDrawable" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/web_view" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ridi.books.viewer.common.view.NetworkErrorView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/center_loading_spinner" />
+    </FrameLayout>
+</LinearLayout>

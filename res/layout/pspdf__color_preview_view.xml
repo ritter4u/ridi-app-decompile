@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="end|bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/pspdf__previous_color_view" android:layout_width="128.0dip" android:layout_height="128.0dip" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="end|bottom|center" android:orientation="vertical" android:id="@id/pspdf__current_color_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" android:layout_gravity="end" android:id="@id/pspdf__hex_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" android:layout_gravity="end" android:id="@id/pspdf__hsl_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" android:layout_gravity="end" android:id="@id/pspdf__rgb_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+</merge>

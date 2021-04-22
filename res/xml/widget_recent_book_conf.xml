@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="250.0dip" android:minHeight="110.0dip" android:initialLayout="@layout/widget_recent_book" android:configure="com.ridi.books.viewer.widget.RecentBookWidgetConfigureActivity" android:previewImage="@drawable/widget_preview" android:resizeMode="horizontal|vertical" android:minResizeWidth="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

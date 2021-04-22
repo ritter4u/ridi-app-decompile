@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.framework.ui.inspector.ColorPreviewView android:id="@id/pspdf__color_preview_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/pspdf__color_mode_tabs" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <com.pspdfkit.framework.ui.views.WrapContentViewPager android:id="@id/pspdf__color_mode_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

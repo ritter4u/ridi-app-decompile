@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="com_appboy_card_background_border_bottom">1.0dip</dimen>
+    <dimen name="com_appboy_card_background_border_left">1.0dip</dimen>
+    <dimen name="com_appboy_card_background_border_right">1.0dip</dimen>
+    <dimen name="com_appboy_card_background_border_top">0.5dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_bottom">1.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_left">1.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_right">1.0dip</dimen>
+    <dimen name="com_appboy_content_card_background_border_top">0.5dip</dimen>
+    <dimen name="com_appboy_content_card_background_shadow_bottom">1.0dip</dimen>
+    <dimen name="tw__login_btn_text_size">18.0sp</dimen>
+    <dimen name="library_book_cover_height_grid">128.0dip</dimen>
+    <dimen name="library_book_cover_width_grid">90.0dip</dimen>
+    <dimen name="library_book_height_grid">160.0dip</dimen>
+    <dimen name="library_book_width_grid">108.0dip</dimen>
+</resources>

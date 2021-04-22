@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.view.TextSearchResultItemView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/toc_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/toc_top_space" android:background="@color/slategray_5" android:layout_width="fill_parent" android:layout_height="7.0dip">
+            <View android:background="@color/slategray_20" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+            <View android:background="@color/slategray_20" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/reader_text_search_toc_text_size" android:textColor="@color/slategray_50" android:gravity="center" android:id="@id/toc_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="6.0dip" android:lineSpacingExtra="4.0dip" android:paddingStart="36.0dip" android:paddingEnd="36.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/result_container" android:background="@drawable/reader_bg_rectangle_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/reader_text_search_result_side_padding" android:paddingEnd="@dimen/reader_text_search_result_side_padding">
+        <TextView android:textSize="@dimen/reader_text_search_result_text_size" android:textColor="@color/slategray_100" android:id="@id/result_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxLines="2" android:lineSpacingExtra="6.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="12.0dip" android:textColor="@color/reader_text_search_result_percent_page_text" android:layout_gravity="center" android:id="@id/result_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <View android:layout_gravity="center_vertical" android:background="@color/slategray_20" android:layout_width="0.5dip" android:layout_height="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/reader_text_search_result_percent_page_text" android:layout_gravity="center" android:id="@id/result_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <View android:id="@id/result_bottom_border" android:background="@color/slategray_20" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/reader_text_search_toc_text_size" android:textColor="@color/slategray_50" android:gravity="center_horizontal" android:id="@id/too_many_results_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:text="검색 결과가 너무 많습니다.\n검색어를 변경해서 다시 검색해보세요." android:maxLines="2" android:lineSpacingExtra="6.0dip" />
+</com.ridi.books.viewer.reader.view.TextSearchResultItemView>

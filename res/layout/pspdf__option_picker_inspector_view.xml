@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <EditText android:id="@id/pspdf__search_edit_text_inline" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/pspdf__search_hint" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/pspdf__options_layout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d σχόλια</item>
+        <item quantity="zero">Δεν υπάρχουν σχόλια</item>
+        <item quantity="one">%d σχόλιο</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d γραμμή</item>
+        <item quantity="zero">%d γραμμή</item>
+        <item quantity="one">%d γραμμή</item>
+        <item quantity="two">%d γραμμή</item>
+        <item quantity="many">%d γραμμές</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d σελίδες</item>
+        <item quantity="one">%d σελίδα</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">Βρέθηκαν %d αποτελέσματα</item>
+        <item quantity="zero">Δεν βρέθηκαν αποτελέσματα</item>
+        <item quantity="one">Βρέθηκε %d αποτέλεσμα</item>
+    </plurals>
+</resources>

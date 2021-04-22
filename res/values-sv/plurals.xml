@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d anteckningar</item>
+        <item quantity="zero">Inga anteckningar</item>
+        <item quantity="one">%d anteckning</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d rader</item>
+        <item quantity="zero">%d rader</item>
+        <item quantity="one">%d rad</item>
+        <item quantity="two">%d rader</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">%d sidor</item>
+        <item quantity="one">%d sida</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">Hittade %d träffar</item>
+        <item quantity="zero">Hittade inga träffar</item>
+        <item quantity="one">Hittade %d träff</item>
+    </plurals>
+</resources>

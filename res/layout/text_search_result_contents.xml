@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView android:name="com.ridi.books.viewer.reader.fragment.TextSearchResultFragment" android:id="@id/fragment_search_result" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/web_view_container" android:background="@color/slategray_20" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:layout_gravity="center_horizontal" android:id="@id/web_view_for_dictionary" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ridi.books.viewer.common.view.NetworkErrorView android:layout_gravity="center_horizontal" android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include layout="@layout/center_loading_spinner" />
+</merge>

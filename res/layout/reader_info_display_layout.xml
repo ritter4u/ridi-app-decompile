@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="start|bottom|center" android:id="@id/reader_left_info" style="@style/RidiReaderInfoDisplay" />
+    <TextView android:gravity="end|bottom|center" android:id="@id/reader_right_info" style="@style/RidiReaderInfoDisplay" />
+</LinearLayout>

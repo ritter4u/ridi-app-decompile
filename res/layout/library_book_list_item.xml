@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.main.view.library.book.LibraryBookListItemView android:layout_width="fill_parent" android:layout_height="@dimen/library_book_height_list" android:foreground="?bookForeground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="bottom" android:background="?libraryBookListDivider" android:layout_width="fill_parent" android:layout_height="@dimen/library_book_list_divider_height" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="10.0dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/library_book_height_list">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/new_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:src="@drawable/main_library_icon_new_book" android:contentDescription="@null" />
+                <FrameLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.ridi.books.viewer.main.view.library.book.LibraryBookCoverView android:id="@id/cover" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/marked_as_invalidated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_library_icon_book_marked_as_invalidated" android:contentDescription="@null" />
+                <ImageView android:layout_gravity="center" android:id="@id/selection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:baselineAligned="false" android:layout_marginStart="12.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.ridi.books.viewer.main.view.library.book.HighlightTextView android:textSize="14.0dip" android:textStyle="bold" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="3.0dip" app:ellipsize="middle" app:highlightColor="?libraryBookTitleHighlightColor" />
+                <com.ridi.books.viewer.main.view.library.book.HighlightTextView android:textSize="12.0dip" android:textColor="?libraryBookAuthorTextColor" android:id="@id/author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" android:includeFontPadding="false" app:highlightColor="?libraryBookTitleHighlightColor" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/remain_time_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <ImageView android:id="@id/remain_time_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="2.0dip" />
+                    <TextView android:textSize="10.0dip" android:gravity="center_vertical" android:id="@id/remain_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+                </LinearLayout>
+                <TextView android:textSize="10.0dip" android:textColor="?libraryBookListStreamingReadTextColor" android:id="@id/streaming_read" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="바로 읽기" android:singleLine="true" android:includeFontPadding="false" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/download_error_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/main_library_icon_download_error" android:paddingEnd="3.0dip" />
+                    <TextView android:textSize="@dimen/book_download_error_text_size" android:textStyle="bold" android:textColor="?libraryBookDownloadErrorTextColor" android:gravity="center_vertical" android:id="@id/download_error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="end|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="13.0dip">
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/reading_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/book_reading_progress_text_size" android:textColor="?libraryBookProgressTextColor" android:id="@id/reading_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="11.0dip" android:textColor="?libraryBookProgressTextColor" android:id="@id/reading_progress_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                        </LinearLayout>
+                        <ProgressBar android:id="@id/reading_progress_bar" android:layout_width="75.0dip" android:layout_height="8.0dip" android:progressDrawable="?libraryBookReadingProgressDrawable" style="?android:progressBarStyleHorizontal" />
+                    </LinearLayout>
+                    <TextView android:textSize="11.0dip" android:textStyle="bold" android:textColor="?libraryBookCountTextColor" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/group_book_count" android:background="?libraryGroupBookCountBandListBackground" android:layout_width="wrap_content" android:layout_height="25.0dip" android:includeFontPadding="false" android:paddingStart="10.0dip" android:paddingEnd="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/tray_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/highlight_summary" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?libraryBookHighlight" />
+                        <TextView android:textSize="11.0dip" android:textColor="?libraryBookInfoTextColor" android:gravity="center" android:id="@id/highlight_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/memo_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?libraryBookMemo" />
+                        <TextView android:textSize="11.0dip" android:textColor="?libraryBookInfoTextColor" android:gravity="center" android:id="@id/memo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/bookmark_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?libraryBookBookmark" />
+                        <TextView android:textSize="11.0dip" android:textColor="?libraryBookInfoTextColor" android:gravity="center" android:id="@id/bookmark_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <ImageView android:gravity="center" android:id="@id/sd_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?shelfBookSdcard" android:contentDescription="@null" android:layout_marginStart="8.0dip" />
+                </LinearLayout>
+                <com.ridi.books.viewer.main.view.BookDownloadProgressView android:id="@id/download_progress" android:layout_width="@dimen/library_book_download_progress_size_list" android:layout_height="@dimen/library_book_download_progress_size_list" app:listMode="true" />
+                <TextView android:textSize="10.0dip" android:textColor="?libraryBookFileSizeTextColor" android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.ridi.books.viewer.main.view.library.book.LibraryBookListItemView>

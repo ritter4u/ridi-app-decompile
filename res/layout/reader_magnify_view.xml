@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/reader_bg_magnify_shadow" android:layout_width="@dimen/reader_magnifier_shadow_width" android:layout_height="@dimen/reader_magnifier_shadow_height" android:contentDescription="@null" android:alpha="0.5" />
+    <com.ridi.books.viewer.reader.view.ReaderMagnifyImageView android:id="@id/magnify_image_view" android:layout_width="@dimen/reader_magnifier_width" android:layout_height="@dimen/reader_magnifier_height" android:layout_margin="3.0dip" android:contentDescription="@null" />
+    <View android:background="@drawable/reader_magnify_round_stroke" android:layout_width="@dimen/reader_magnifier_width" android:layout_height="@dimen/reader_magnifier_height" android:layout_margin="3.0dip" />
+</merge>

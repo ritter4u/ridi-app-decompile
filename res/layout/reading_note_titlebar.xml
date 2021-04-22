@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/default_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/reader_fragment_title_bar_height">
+        <ImageButton android:id="@id/icon" android:layout_centerVertical="true" android:contentDescription="@null" style="@style/RidiReaderFragmentTitleBarIcon" />
+        <TextView android:id="@id/title" android:text="독서노트" android:layout_centerVertical="true" android:layout_toEndOf="@id/icon" app:drawableEndCompat="@drawable/reader_reading_note_icon_arrow_bottom" style="@style/RidiReaderFragmentTitleBarText" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/bluegray_70" android:gravity="center" android:id="@id/edit_button" android:background="@drawable/reader_bg_fragment_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="편집" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/edit_container" android:background="@color/dodgerblue_60" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/reader_fragment_title_bar_height">
+        <ImageButton android:id="@id/exit_button" android:background="?android:actionBarItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/btn_actionbar_back_d" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/edit_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="편집" android:includeFontPadding="false" android:paddingStart="12.0dip" android:paddingEnd="6.0dip" android:layout_toEndOf="@id/exit_button" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/edit_note_selected_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0" android:layout_toEndOf="@id/edit_title" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/select_all_button" android:background="?android:actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="전체 선택" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_toStartOf="@id/remove_button" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white_70" android:gravity="center" android:id="@id/remove_button" android:background="?android:actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="삭제" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</merge>

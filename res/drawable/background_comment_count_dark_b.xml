@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white_60" />
+    <corners android:radius="9.0dip" />
+    <stroke android:width="2.0dip" android:color="@color/reader_bar_background_d_b" />
+</shape>

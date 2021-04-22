@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/library_books_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/center_loading_spinner" layout="@layout/center_loading_spinner" />
+    <com.ridi.books.viewer.main.view.library.LibraryEmptyStateView android:id="@id/empty_state_view" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ridi.books.viewer.main.view.library.book.LibraryBookGridView android:scrollbarStyle="outsideOverlay" android:gravity="center" android:id="@id/grid_view" android:tag="binding_2" android:background="?themeBackground" android:fadingEdge="none" android:clipToPadding="false" android:persistentDrawingCache="all" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:columnWidth="@dimen/library_book_width_grid" />
+</FrameLayout>

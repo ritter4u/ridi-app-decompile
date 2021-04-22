@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/dialog_adult_payment_info_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="18.0dip" android:paddingEnd="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="?serialDialogBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="?serialDialogTitleTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="성인 콘텐츠 구매 제한 안내" />
+            <TextView android:textSize="15.0dip" android:textColor="?serialDialogContentTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="구글 정책에 따라 성인 콘텐츠의 최초 구매는 리디북스 웹 사이트에서 진행한 후 앱 내에서 이용할 수 있습니다." android:lineSpacingExtra="3.0dip" />
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <Button android:textSize="14.0dip" android:textStyle="bold" android:textColor="?serialDialogNegativeTextColor" android:id="@id/detail" android:tag="binding_1" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="자세히 보기" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="?android:borderlessButtonStyle" />
+                <Button android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm" android:tag="binding_2" android:layout_width="58.0dip" android:layout_height="36.0dip" android:text="확인" android:layout_marginStart="12.0dip" style="?android:borderlessButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/close" android:background="?android:selectableItemBackground" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/series_payment_dialog_icon_close" android:scaleType="center" android:contentDescription="@null" />
+    </FrameLayout>
+</FrameLayout>

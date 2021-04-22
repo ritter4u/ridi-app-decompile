@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="reader_line_height_factor_percentages">
+        <item>151</item>
+        <item>167</item>
+        <item>184</item>
+        <item>202</item>
+        <item>221</item>
+        <item>241</item>
+    </integer-array>
+</resources>

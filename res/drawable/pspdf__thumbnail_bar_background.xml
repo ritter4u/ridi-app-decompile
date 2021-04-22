@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/pspdf__color_black" />
+    <corners android:radius="@dimen/pspdf__floating_thumbnail_bar_corner_radius" />
+</shape>

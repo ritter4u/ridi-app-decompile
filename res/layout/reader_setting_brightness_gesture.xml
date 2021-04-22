@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/brightness_gesture_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/brightness_gesture_control" android:text="@string/brightness_gesture_setting_name" style="@style/RidiReaderSettingItem" />
+    <androidx.appcompat.widget.SwitchCompat android:theme="@style/RidiTheme.White" android:id="@id/brightness_gesture_control_button" style="@style/RidiSettingSwitch" />
+    <View android:layout_alignParentBottom="true" style="@style/RidiReaderSettingDivider" />
+</RelativeLayout>

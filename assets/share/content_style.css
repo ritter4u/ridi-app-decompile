@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+}
+.wrap {
+    display: table;
+    width: 1040px;
+    margin: 0 auto;
+    height: inherit;
+}
+.info {
+    margin-top: 32px;
+}
+.contentInfo {
+    font-size: 48px;
+    font-family: notosans_l;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 32px;
+    height: 54px;
+}
+.verticalCenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+#contentText {
+    text-align: justify;
+    line-height: 108px;
+    font-size: 60px;
+    font-family: kopubbatang;
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    padding-right: 10px;
+    overflow: hidden;
+    margin: 0;
+}
+#logoImage {
+    position: absolute;
+    top: 1097px;
+    left: 1030px;
+    width: 150px;
+    height: 83px;
+}
+@font-face {
+    font-family: ridibatang;
+    src: url("../fonts/RIDIBatang.otf") format("opentype");
+}
+@font-face {
+    font-family: kopubbatang;
+    font-weight: bold;
+    src: url("../fonts/kopubbatang.ttf") format("truetype");
+}
+@font-face {
+    font-family: notosans_l;
+    src: url("notosans_l.otf") format("opentype");
+}
+@font-face {
+    font-family: nanummyeongjo;
+    src: url("nanummyeongjo.woff") format("woff");
+}

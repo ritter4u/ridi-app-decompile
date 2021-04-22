@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/library_top_bar_0" android:layout_width="fill_parent" android:layout_height="@dimen/main_top_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?mainTopBarBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/tab_layout_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/noti_center_button" android:src="?libraryTopBarNotiCenterIcon" android:contentDescription="@null" android:layout_marginEnd="0.0dip" style="@style/RidiMainTopBarRightButton" />
+            <ImageView android:id="@id/reading_note_button" android:src="?readingNoteButtonIcon" android:contentDescription="@null" android:layout_marginEnd="0.0dip" style="@style/RidiMainTopBarRightButton" />
+            <ImageView android:id="@id/library_search_button" android:src="?searchTopBarSearchIcon" android:contentDescription="@null" style="@style/RidiMainTopBarRightButton" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/add_to_shelf_mode_title_container" android:tag="binding_1" android:background="?mainTopBarBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/add_to_shelf_back_button" android:background="?android:actionBarItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="?android:homeAsUpIndicator" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?libraryTopBarTitleTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="책장에 추가할 책 선택" android:layout_centerVertical="true" android:layout_toEndOf="@id/add_to_shelf_back_button" />
+        <ImageView android:id="@id/add_to_shelf_search_button" android:src="?searchTopBarSearchIcon" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" style="@style/RidiMainTopBarRightButton" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/search_container" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/RidiMainSearchTopBar">
+        <com.ridi.books.viewer.common.view.ClearableEditText android:id="@id/search_keyword_text" android:layout_toStartOf="@id/search_cancel_button" style="@style/RidiMainSearchKeywordText" />
+        <com.ridi.books.viewer.common.view.UnderlineTextButton android:id="@id/search_cancel_button" style="@style/RidiMainSearchCancelButton" />
+    </RelativeLayout>
+</FrameLayout>

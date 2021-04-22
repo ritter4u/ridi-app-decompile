@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:tag="layout/library_top_sub_bar_0" android:layout_width="fill_parent" android:layout_height="@dimen/main_sub_nav_bar_height">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/title_container" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_toStartOf="@id/top_sub_bar_buttons_container" android:layout_alignParentStart="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?libraryTopBarShelvesIcon" android:paddingEnd="8.0dip" />
+                <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="?libraryTopBarTitleTextColor" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="13.0dip" android:textColor="?libraryTopBarBookCountTextColor" android:gravity="center_vertical" android:id="@id/book_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" android:paddingStart="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/top_sub_bar_buttons_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="8.0dip" android:layout_alignParentEnd="true">
+                <FrameLayout android:id="@id/filter_list_open_button" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:src="?libraryTopBarFilterIcon" android:contentDescription="@null" style="@style/RidiLibraryTopBarButton" />
+                    <ImageView android:layout_gravity="end|center|top" android:id="@id/filter_on_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="?libraryTopBarFilterOnIcon" android:contentDescription="@null" android:layout_marginEnd="4.0dip" />
+                </FrameLayout>
+                <ImageView android:id="@id/add_button" android:src="?libraryAddIcon" android:contentDescription="@null" style="@style/RidiLibraryTopBarButton" />
+                <ImageView android:id="@id/download_all_button" android:src="?libraryTopBarDownloadAllIcon" android:contentDescription="@null" style="@style/RidiLibraryTopBarButton" />
+                <ImageView android:id="@id/edit_button" android:src="?libraryTopBarEditIcon" android:contentDescription="@null" style="@style/RidiLibraryTopBarButton" />
+                <ImageView android:id="@id/library_overflow_menu_button" android:src="?libraryTopBarOverflowIcon" android:contentDescription="@null" style="@style/RidiLibraryTopBarButton" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.ridi.books.viewer.main.view.library.LibraryTopToolBar android:layout_gravity="top" android:id="@id/top_tool_bar" android:background="@color/dodgerblue_60" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="?mainTopBarShadow" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    </FrameLayout>
+    <View android:tag="layout/library_top_sub_bar_1" android:background="?libraryTopBarDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</merge>

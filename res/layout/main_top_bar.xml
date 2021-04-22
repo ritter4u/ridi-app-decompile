@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/back_title_container" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="12.0dip">
+            <ImageView android:id="@id/top_bar_back_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?android:homeAsUpIndicator" android:contentDescription="@null" android:layout_marginStart="8.0dip" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?mainTopBarTextColor" android:ellipsize="end" android:id="@id/top_bar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageButton android:id="@id/my_ridi_button" android:src="?myRidiButtonIcon" android:contentDescription="@null" style="@style/RidiMainTopBarRightButton" />
+</merge>

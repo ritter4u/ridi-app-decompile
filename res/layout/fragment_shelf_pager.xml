@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_shelf_pager_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/shelf_pager" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="bottom" android:id="@id/recent_book_bar" android:layout_width="fill_parent" android:layout_height="@dimen/library_recent_book_bar_height" layout="@layout/recent_book_bar" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/shelf_adding_books_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

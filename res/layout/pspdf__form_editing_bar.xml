@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/pspdf__forms_validation_error" android:padding="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/pspdf__form_editing_bar_height" android:maxLines="3" style="@style/TextAppearance.AppCompat.Body1" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/pspdf__form_editing_bar_layout" android:layout_width="fill_parent" android:layout_height="@dimen/pspdf__form_editing_bar_height">
+        <ImageButton android:id="@id/pspdf__forms_navigation_button_previous" android:background="?selectableItemBackgroundBorderless" android:padding="6.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/pspdf__ic_chevron_left" android:scaleType="fitCenter" android:contentDescription="@string/pspdf__search_btn_previous" />
+        <ImageButton android:id="@id/pspdf__forms_navigation_button_next" android:background="?selectableItemBackgroundBorderless" android:padding="6.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/pspdf__ic_chevron_right" android:scaleType="fitCenter" android:contentDescription="@string/pspdf__search_btn_next" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/TextAppearance.AppCompat.Button" android:gravity="center" android:layout_gravity="right" android:id="@id/pspdf__forms_clear_field_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:minWidth="48.0dip" android:text="@string/pspdf__forms_clear_field" android:maxLines="2" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            </FrameLayout>
+            <com.pspdfkit.ui.LocalizedTextView android:textAppearance="@style/TextAppearance.AppCompat.Button" android:gravity="center" android:id="@id/pspdf__forms_done_button" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:minWidth="48.0dip" android:text="@string/pspdf__done" android:maxLines="2" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

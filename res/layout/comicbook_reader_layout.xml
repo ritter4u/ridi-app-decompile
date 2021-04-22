@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.view.ReaderLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/page_based_reader_layout" />
+    <ImageView android:layout_gravity="start|center|top" android:id="@id/reader_bookmark_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reader_icon_bookmark" android:contentDescription="@null" android:alpha="0.0" android:paddingStart="@dimen/reader_bookmark_padding" />
+    <include layout="@layout/reader_bookmark_right" />
+</com.ridi.books.viewer.reader.view.ReaderLayout>

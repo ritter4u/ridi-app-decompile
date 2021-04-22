@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ridi.books.viewer.reader.view.TTSTimerActionView android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginStart="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/actionbar_tts_timer_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/reader_tts_icon_reader_timer" android:contentDescription="@null" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/reader_actionbar_text" android:id="@id/actionbar_tts_timer_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.0dip" />
+</com.ridi.books.viewer.reader.view.TTSTimerActionView>

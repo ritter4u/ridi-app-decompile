@@ -1,0 +1,27 @@
+.class public Lf/u/e0/m5/b/f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lf/u/e0/m5/b/a$e;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onPrepareAnnotationSelection(Lf/u/e0/m5/a/d;Lf/u/r/d;Z)Z
+    .locals 0
+
+    const/4 p1, 0x1
+
+    return p1
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/slategray_20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/reader_fragment_title_bar_height">
+        <ImageButton android:layout_gravity="start|center" android:id="@id/icon" android:contentDescription="@null" style="@style/RidiReaderFragmentTitleBarIcon" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/title" style="@style/RidiReaderFragmentTitleBarText" />
+    </LinearLayout>
+    <include layout="@layout/index_list_header_divider" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_gravity="center_horizontal" android:id="@id/reader_fragment_list_background" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@android:id/empty" layout="@layout/index_list_empty" />
+        <ListView android:layout_gravity="center_horizontal" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:choiceMode="singleChoice" android:headerDividersEnabled="false" android:paddingStart="@dimen/reader_index_list_side_padding" android:paddingEnd="@dimen/reader_index_list_side_padding" />
+        <View android:background="@drawable/reader_bg_fragment_title_bar_shadow" android:layout_width="fill_parent" android:layout_height="6.0dip" android:contentDescription="@null" />
+    </FrameLayout>
+</LinearLayout>
